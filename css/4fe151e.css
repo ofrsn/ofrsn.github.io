@@ -451,11 +451,37 @@ img .responsive {
 	padding-bottom: 15px;
 }
 .container .nous-rejoindre {
-	margin-left:32%;
-	margin-right:30%;
 	padding-bottom:58px;
+	text-align: center;
+	padding-left: 0px;
 }
 
+.nous-rejoindre .item
+{
+	display: inline-block;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.button
+{
+	padding: 0.5em 1em !important;
+	color: #fff !important;
+	font-weight: 100 !important;
+	letter-spacing: 0.02em;
+	font-size: 0.9em !important;
+	border-radius:3px;
+}
+
+.button:hover
+{
+	text-decoration: none;
+}
+
+.button-yellow
+{
+	background-color:#ffcd00 !important;
+}
 
 .rejoins >li,
 .partenaire >li,
@@ -468,16 +494,15 @@ img .responsive {
 .resultats,
 .nous-contacter{
 	padding: 10px;
-	float:left;
 	font-weight: bold;
 	font-size: 18px;
-	font-transform:uppercase;
 	border-radius:3px;
 	margin-bottom:35px;
 }
 
 .resultats {
 	padding:13px;
+	background-color:#ffcd00;
 }
  
 .nous-contacter {
@@ -492,8 +517,7 @@ img .responsive {
 	background-color:#ffcd00;
 }
 
-.partenaire,
-.resultats {
+.partenaire {
 	background-color:#42d9B7;
 }
 
@@ -517,7 +541,187 @@ img .responsive {
 }
 
 .resultats{
-margin-left: 39%;
-margin-right: 35%;
+margin-left: 35%;
+margin-right: 30%;
 margin-top: 25px;
+}
+
+.navbar-brand {
+height:70px !important;}
+
+.section-partenaire,
+.section-challenge {
+	background-color:#293787;
+	color:white;
+}
+
+
+.section-partenaire a {
+	color:#42D9B7;
+}
+
+.section-challenge h1 {
+	color:#42D9B7;
+}
+
+
+.mc-field-group {
+	width: 20%;
+    position: relative;
+    padding: 8px 0;
+    border: none;
+    background: none;
+    border-bottom: 2px solid #b3b0aa;
+    margin: 0 0 15px;
+    color: #ffffff;
+	}
+
+.container-newsletter
+{
+	background-color:#42D9B7;
+}
+
+.container-challenges
+{
+	background-color:#293787;
+}
+
+.container-newsletter,
+.container-join,
+.container-challenges,
+.super-container
+{
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+#inscrivezvous h2
+{
+	color: #fff;
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 30px;
+}
+
+
+.inputs-line > input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+	color:    #fff;
+}
+.inputs-line > input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	color:    #fff;
+	opacity:  1;
+}
+.inputs-line > input::-moz-placeholder { /* Mozilla Firefox 19+ */
+	color:    #fff;
+	opacity:  1;
+}
+.inputs-line > input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color:    #fff;
+}
+
+.inputs-line > .input {
+	width: 100%;
+	border: none;
+	margin-bottom: 10px;
+}
+
+.inputs-line > input[type=text],
+.inputs-line > input[type=email]
+{
+	background-color: transparent;
+	border-bottom: 1px solid #fff;
+}
+
+@media only screen and (min-width : 768px) {
+
+	.inputs-line
+	{
+		display: flex;
+		justify-content: center;
+		align-content: center;
+	}
+
+	.inputs-line > input
+	{
+		margin-left: 5px;
+		margin-right: 5px;
+		margin-bottom: 0px;
+	}
+
+	.inputs-line > input[type=email],
+	.inputs-line > input[type=text]
+	{
+
+	}
+}
+
+
+.margin-top
+{
+	margin-top: 30px;
+}
+
+.margin-bottom
+{
+	margin-bottom: 30px;
+}
+
+.little-title
+{
+	font-weight: 900;
+	margin-bottom: 15px;
+}
+
+.inputs-line .little-title
+{
+	display: flex;
+	align-items: center;
+}
+
+.align-center
+{
+	text-align: center;
+}
+
+.container-challenges h1,
+.container-partenaires h1
+{
+	color: #fff;
+	margin-bottom: 30px;
+}
+
+.container-partenaires
+{
+	color: #fff;
+	background-color:#293787;
+}
+
+.white-block
+{
+	padding: 30px;
+	background-color: #fff;
+	color: #000000;
+	margin-top: 60px;
+}
+
+.presse-container
+{
+	display: none;
+}
+
+.footer
+{
+	margin-top: 0px;
+	border-top: 0px;
+}
+
+.footer a
+{
+	font-weight: 100 !important;
+}
+
+.footer .item-image img
+{
+	height: 50px;
+	width: auto;
 }

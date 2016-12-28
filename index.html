@@ -1,319 +1,397 @@
+
 <!DOCTYPE html>
-<!-- saved from url=(0042)http://localhost:8888/Epidemium/index.html -->
-<html ng-app="store" class="ng-scope"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+<html ng-app="store">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		
-		<!-- change the color of address bar -->
-		<meta name="theme-color" content="#002690">
-			
-				
-
-		<title>Epidemium - Challenge for cancer | Multiverse</title>
-		<meta name="description" content="Epidemium est un programme de recherche scientifique pour la compréhension du cancer: Big Data, open-source, collaboratif. Ouvert à tous les profils et qualifications.">
-		<meta name="robots" content="INDEX, FOLLOW">
-				
-		<!-- Schema.org markup for Google+ -->
-		<meta itemprop="name" content="Epidemium - Challenge for cancer | Multiverse">
-		<meta itemprop="description" content="Epidemium est un programme de recherche scientifique pour la compréhension du cancer: Big Data, open-source, collaboratif. Ouvert à tous les profils et qualifications.">
-		<meta itemprop="image" content="http://www.epidemium.cc/images/EPDM_visuel_Partenaires_banner.jpg">
-
-		<!-- Twitter Card data -->
-		<meta name="twitter:card" content="summary">
-		<meta name="twitter:site" content="http://www.epidemium.cc">
-		<meta name="twitter:title" content="Epidemium - Challenge for cancer | Multiverse">
-		<meta name="twitter:description" content="Epidemium est un programme de recherche scientifique pour la compréhension du cancer: Big Data, open-source, collaboratif. Ouvert à tous les profils et qualifications.">
-		<meta name="twitter:creator" content="Epidemium - Challenge for cancer | Multiverse">
-		<!-- Twitter summary card with large image must be at least 280x150px -->
-		<meta name="twitter:image:src" content="http://www.epidemium.cc/images/EPDM_visuel_Partenaires_banner.jpg">
-
-		<!-- Open Graph data -->
-		<meta property="og:title" content="Epidemium - Challenge for cancer | Multiverse">
-		<meta property="og:type" content="article">
-		<meta property="og:url" content="">
-		<meta property="og:image" content="http://www.epidemium.cc/images/EPDM_visuel_Partenaires_banner.jpg">
-		<meta property="og:description" content="Epidemium est un programme de recherche scientifique pour la compréhension du cancer: Big Data, open-source, collaboratif. Ouvert à tous les profils et qualifications.">
-		<meta property="og:site_name" content="Epidemium - Challenge for cancer | Multiverse">
-
-				
-		<!-- BOOTSTRAP CORE STYLE CSS -->
-		<link rel="stylesheet" href="./Epidemium - Challenge for cancer _ Multiverse_files/font-awesome.min.css">
-		<!-- Glyphicon -->
-		<link rel="stylesheet" href="./Epidemium - Challenge for cancer _ Multiverse_files/bootstrap.min.css">
+	<!-- change the color of address bar -->
+	<meta name="theme-color" content="#002690">
 
 
-        
-					<link rel="stylesheet" href="./Epidemium - Challenge for cancer _ Multiverse_files/ebf19be.css">
-				
-					<link rel="stylesheet" href="./Epidemium - Challenge for cancer _ Multiverse_files/4fe151e.css" type="text/css">
-		
-		<link rel="shortcut icon" type="image/png" href="http://localhost:8888/Epidemium/favicon.png">
 
-		<link href="./Epidemium - Challenge for cancer _ Multiverse_files/css" rel="stylesheet" type="text/css">
-		
-		<!-- Google Analytics Tracking Code -->
-		<script async="" src="./Epidemium - Challenge for cancer _ Multiverse_files/analytics.js"></script><script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-		  
-		  ga('create', 'UA-64832042-1', 'auto');
-		  ga('send', 'pageview');
-		  		
-		  ga('create', 'UA-70603842-1', 'auto', 'contact3do2');
-		  ga('contact3do2.send', 'pageview');
+	<title>Epidemium - Challenge for cancer | Multiverse</title>
+	<meta name="description" content="Epidemium est un programme de recherche scientifique pour la compréhension du cancer: Big Data, open-source, collaboratif. Ouvert à tous les profils et qualifications." />
+	<meta name="robots" content="INDEX, FOLLOW">
 
-		</script>
-		
-    <style type="text/css">#mc_embed_signup input.mce_inline_error { border-color:#6B0505; } #mc_embed_signup div.mce_inline_error { margin: 0 0 1em 0; padding: 5px 10px; background-color:#6B0505; font-weight: bold; z-index: 1; color:#fff; }</style><style></style></head>
+	<!-- Schema.org markup for Google+ -->
+	<meta itemprop="name" content="Epidemium - Challenge for cancer | Multiverse">
+	<meta itemprop="description" content="Epidemium est un programme de recherche scientifique pour la compréhension du cancer: Big Data, open-source, collaboratif. Ouvert à tous les profils et qualifications.">
+	<meta itemprop="image" content="http://www.epidemium.cc/images/EPDM_visuel_Partenaires_banner.jpg">
 
-	<body ng-controller="MainCtrl" style="zoom: 1;" class="ng-scope">
-	
-		<!-- HEADER -->
-		<nav class="navaffix navbar navbar-inverse" role="navigation">
+	<!-- Twitter Card data -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="http://www.epidemium.cc">
+	<meta name="twitter:title" content="Epidemium - Challenge for cancer | Multiverse">
+	<meta name="twitter:description" content="Epidemium est un programme de recherche scientifique pour la compréhension du cancer: Big Data, open-source, collaboratif. Ouvert à tous les profils et qualifications.">
+	<meta name="twitter:creator" content="Epidemium - Challenge for cancer | Multiverse">
+	<!-- Twitter summary card with large image must be at least 280x150px -->
+	<meta name="twitter:image:src" content="http://www.epidemium.cc/images/EPDM_visuel_Partenaires_banner.jpg">
 
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand logo" href="http://localhost:8888/Epidemium/index.html">
-					<img class="img-responsive" src="./Epidemium - Challenge for cancer _ Multiverse_files/logo.png" alt="Epidemium">
-				</a>
-				<p class="navbar-text brand-text">Challenge 4 Cancer<br><small>du 5 novembre 2016 au 5 mai 2017</small></p>
-			</div>
-			<div class="navbar-collapse collapse" collapse="navCollapsed" aria-expanded="false" aria-hidden="true" style="height: 0px;">
-			
-				<ul class="nav navbar-nav">
-					<li class="dropdown" dropdown="">
-						<a href="http://localhost:8888/Epidemium/index.html#" ng-controller="DropdownCtrl" class="dropdown-toggle ng-scope" dropdown-toggle="" aria-haspopup="true" aria-expanded="false">Communauté<span class="caret"></span></a>
-						<ul class="dropdown-menu" dropdown-menu="" role="menu">
-				<!--			<li><a href="search/user/index.html">Les membres</a></li>
-							<li><a href="project/search/index.html">Les projets</a></li>
-							<li><a href="http://www.meetup.com/fr/Epidemium">Meetup</a></li> -->
-							<li><a href="https://www.facebook.com/epidemiumcc">Facebook</a></li>
-							<li><a href="https://twitter.com/epidemium_cc">Twitter</a></li>							
-						</ul>
-					</li>				
-					<li class="dropdown" dropdown="">
-						<a href="http://localhost:8888/Epidemium/index.html#" ng-controller="DropdownCtrl" class="dropdown-toggle ng-scope" dropdown-toggle="" aria-haspopup="true" aria-expanded="false">Ressources<span class="caret"></span></a>
-						<ul class="dropdown-menu" dropdown-menu="" role="menu">
-							<!--<li><a href="index.html#inscrivezvous" smooth-scroll target="inscrivezvous">Inscrivez-vous !</a></li>-->
-							<li><a href="http://wiki.epidemium.cc/">Wiki</a></li>
-							<li><a href="http://data.epidemium.cc/fr#">Data</a></li>	
-						</ul>
-					</li>					
+	<!-- Open Graph data -->
+	<meta property="og:title" content="Epidemium - Challenge for cancer | Multiverse" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="" />
+	<meta property="og:image" content="http://www.epidemium.cc/images/EPDM_visuel_Partenaires_banner.jpg" />
+	<meta property="og:description" content="Epidemium est un programme de recherche scientifique pour la compréhension du cancer: Big Data, open-source, collaboratif. Ouvert à tous les profils et qualifications." />
+	<meta property="og:site_name" content="Epidemium - Challenge for cancer | Multiverse" />
+
+
+	<!-- BOOTSTRAP CORE STYLE CSS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<!-- Glyphicon -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+
+
+	<link rel="stylesheet" href="css/ebf19be.css" />
+
+	<link rel="stylesheet" href="css/4fe151e.css" type="text/css" />
+
+	<link rel="shortcut icon" type="image/png" href="favicon.png" />
+
+	<link href='https://fonts.googleapis.com/css?family=Neuton%7CSource+Sans+Pro:400,300' rel='stylesheet' type='text/css'>
+
+	<!-- Google Analytics Tracking Code -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-64832042-1', 'auto');
+		ga('send', 'pageview');
+
+		ga('create', 'UA-70603842-1', 'auto', 'contact3do2');
+		ga('contact3do2.send', 'pageview');
+
+	</script>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<nav class="navaffix navbar navbar-inverse" role="navigation">
+
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand logo" href="index.html">
+			<img class="img-responsive" src="images/logo.png" alt="Epidemium"/>
+		</a>
+		<p class="navbar-text brand-text" style="display:none;" >Challenge 4 Cancer<br/><small>du 5 novembre 2016 au 5 mai 2017</small> </p>
+	</div>
+	<div class="collapse navbar-collapse"  collapse="navCollapsed">
+
+		<ul class="nav navbar-nav">
+			<li class="dropdown" dropdown>
+				<a href="#" ng-controller="DropdownCtrl" class="dropdown-toggle" dropdown-toggle>Last Season<span class="caret"></span></a>
+				<ul class="dropdown-menu" dropdown-menu role="menu">
+					<!--			<li><a href="search/user/index.html">Les membres</a></li>
+                                <li><a href="project/search/index.html">Les projets</a></li>
+                                <li><a href="http://www.meetup.com/fr/Epidemium">Meetup</a></li> -->
+					<li><a href="http://review.epidemium.cc/">Epidemium 2015-2016</a></li>
+					<li><a href="https://www.facebook.com/epidemiumcc">Facebook</a></li>
+					<li><a href="https://twitter.com/epidemium_cc">Twitter</a></li>
 				</ul>
-				
-				<ul class="nav navbar-nav navbar-signinsignup navbar-right">
-										<li><a href="http://localhost:8888/Epidemium/login/index.html"><span class="glyphicon glyphicon-log-in"></span> Se connecter</a></li>
-					<li><a href="http://localhost:8888/Epidemium/register/index.html"><span class="glyphicon glyphicon-user"></span> S'inscrire</a></li>
-									</ul>
-			</div>
-		</nav>
-		<div class="navplaceholder"></div>
+			</li>
+			<!--	<li class="dropdown" dropdown>
+                    <a href="#" ng-controller="DropdownCtrl" class="dropdown-toggle" dropdown-toggle>Ressources<span class="caret"></span></a>
+                    <ul class="dropdown-menu" dropdown-menu role="menu">
+                        <!--<li><a href="index.html#inscrivezvous" smooth-scroll target="inscrivezvous">Inscrivez-vous !</a></li>
+                        <li><a href="http://wiki.epidemium.cc">Wiki</a></li>
+                        <li><a href="http://data.epidemium.cc/fr#">Data</a></li>
+                    </ul>
+                </li>	-->
+		</ul>
+
+		<ul class="nav navbar-nav navbar-signinsignup navbar-right">
+			<li><a href="login/index.html"><span class="glyphicon glyphicon-log-in"></span> Se connecter</a></li>
+			<li><a href="register/index.html"><span class="glyphicon glyphicon-user"></span> S&#039;inscrire</a></li>
+		</ul>
+	</div>
+</nav>
+<div class="navplaceholder"></div>
 
 <!--<p>navCollapsed={{navCollapsed}}</p>-->
-        
-		<div class="banner">
 
-<div class="container">
+<div class="banner">
 
-  <img class="img-responsive" style="padding: 10%;padding-bottom:8%;" src="./Epidemium - Challenge for cancer _ Multiverse_files/epidemium.png" alt="Epidemium">
+	<div class="container">
 
-	<div class="titre-saison2"><h1>Rejoignez le programme Epidemium 2017</h1><h1></h1></div>
-	<div class="row call-to-action">
-		<ul class="row nous-rejoindre">
-			<div class="rejoins"><li><a href="http://localhost:8888/">Je Rejoins La Communauté</a></li></div>
-			<div class="partenaire"><li><a href="http://localhost:8888/">Devenir Partenaire</a></li></div>
-		</ul>
-  	</div>
-	
-	<div class="row text-center">
-		<div class="col-sm-offset-3 col-sm-2 col-xs-offset-3 col-xs-2"><p><img class="img-responsive center-block" src="./Epidemium - Challenge for cancer _ Multiverse_files/lapaillasse_white.png" alt="(big)data"></p></div>
-		<div class="col-sm-2 col-xs-2"><p style="padding-left:30%; padding-right:30%;"><img class="img-responsive center-block" src="./Epidemium - Challenge for cancer _ Multiverse_files/logo.png" alt="éthique"></p></div>
-		<div class="col-sm-2 col-xs-2"><p><img class="img-responsive center-block" src="./Epidemium - Challenge for cancer _ Multiverse_files/roche_white.png" alt="méthodologie"></p></div>
-	</div>
+		<img class="img-responsive" style="padding: 10%;padding-top:15%;padding-bottom:8%;" src="images/epidemium.png" alt="Epidemium"/>
 
-	<div class="row">
-		<div class="col-sm-4"><small><h3>La Paillasse</h3><p>L’enjeu pour le laboratoire communautaire ouvert La Paillasse est de mutualiser et de distribuer les ressources nécessaires à la concrétisation des projets du data challenge d’Epidemium : “À l'ère de l'intelligence collective et décentralisée, il n'y a pas de monopole pour les grandes idées”, souligne Thomas Landrain, co-fondateur de la Paillasse.</p></small></div>
-
-		<div class="col-sm-4"><small><h3>Programme</h3><p>Epidemium est un programme de recherche scientifique participatif et ouvert dédié à la compréhension du cancer grâce aux Big Data et qui prend la forme d’un data challenge, Challenge4Cancer.</p></small>
-		</div>
-
-		<div class="col-sm-4"><small><h3>Roche</h3><p>“L’étude des mégadonnées ouvertes est un champ de recherche passionnant. En tant qu’acteur de l’innovation en santé, notre ambition est de réinventer une nouvelle forme d’épidémiologie du cancer, pour en faire un véritable outil au service d’une médecine prédictive et préventive”, explique Isabelle Vitali, directrice de l’innovation et du développement des partenariats de Roche Pharma France.</p></small></div>
-	</div>
-
-</div>
-<div class="resultats"><li><a href="http://review.epidemium.cc/">Voir Les Résultats Du Programme 2016</a></li></div>
-</div>
-
-<div class="container">
-
-	<div class="row text-center">
-		<div class="col-sm-12"><h1>Rejoindre la communauté Epidemium</h1></div>
-	</div>
-	<div class="row text-center">
-		<div class="col-sm-offset-2 col-sm-8"><p>Epidemium, c’est avant tout une communauté de curieux, passionnés ou experts des enjeux du Big Data, de l’Open Science ou de la recherche contre le cancer. Vous aussi, faites partie du mouvement, quelque soit le temps que vous voudrez y consacrer et votre domaine de prédilection.</p></div>
-	</div>
-	<div class="row text-center">
-		<div class="col-sm-12">
-                      <img class="img-responsive center-block" src="./Epidemium - Challenge for cancer _ Multiverse_files/schema_epidemium_1110px.png" alt="Flux Epidemium">
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-xs-12 col-sm-8">
-                      <div id="actualite" class="important">
-                           <h3>Actualités</h3>
-                           <p>Epidemium, c’est aussi une communauté de curieux, passionnés ou experts des enjeux du Big Data, de l’Open Science ou de la recherche contre le cancer.</p>
-                    </div>
-		</div>
-		<div class="col-xs-3 col-sm-1">
-                      <a href="http://www.meetup.com/fr/Epidemium/"><img class="img-responsive center-block" src="./Epidemium - Challenge for cancer _ Multiverse_files/meetup.png" alt="Meetup"></a>
-		</div>
-		<div class="col-xs-3 col-sm-1">
-                       <a href="http://wiki.epidemium.cc/"><img class="img-responsive center-block" src="./Epidemium - Challenge for cancer _ Multiverse_files/wiki.png" alt="Wiki"></a>
-		</div>
-		<div class="col-xs-3 col-sm-1">
-                      <a href="https://www.facebook.com/epidemiumcc"><img class="img-responsive center-block" src="./Epidemium - Challenge for cancer _ Multiverse_files/facebook.png" alt="Facebook"></a>
-		</div>
-		<div class="col-xs-3 col-sm-1">
-                      <a href="https://twitter.com/epidemium_cc"><img class="img-responsive center-block" src="./Epidemium - Challenge for cancer _ Multiverse_files/twitter.png" alt="Twitter"></a>
-		</div>
-</div>
-<!--<hr></hr>-->
-
-
-
-
-	<!--
-	<div  ng-controller="ThemeSearchController as store" class="container-fluid">
-		<div class="row text-center">
-			<h1>Les Challenges</h1>      
-		</div>
-		<div class="row text-center">
-			<div class="col-sm-12"><h3>&nbsp;</h3></div>
-		</div>
-		<div class="row">
-			<div class="container-fluid" ng-init="path = 'http://www.epidemium.cc/'">
-				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" ng-repeat="item in store.items">
-					<theme-item-list></theme-item-list>
-				</div>
+		<div class="titre-saison2"><h1 class="margin-bottom">Rejoignez le programme Epidemium 2017</h1></div>
+		<div class="row call-to-action">
+			<div class="row nous-rejoindre">
+				<a class="button item rejoins" href="/">Je Rejoins La Communauté</a>
+				<a class="button item partenaire" href="/">Devenir Partenaire</a>
 			</div>
 		</div>
-			
-	</div>	--> 
 
-	
-<hr class="fancy-line">
-		
+		<div class="row text-center">
+			<div class="col-sm-offset-3 col-sm-2 col-xs-offset-3 col-xs-2"><p><img class="img-responsive center-block" src="images/lapaillasse_white.png" alt="(big)data"></p></div>
+			<div class="col-sm-2 col-xs-2"><p style="padding-left:30%; padding-right:30%;"><img class="img-responsive center-block" src="images/logo.png" alt="éthique"></p></div>
+			<div class="col-sm-2 col-xs-2"><p><img class="img-responsive center-block" src="images/roche_white.png" alt="méthodologie"></p></div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-4"><small><h3>La Paillasse</h3><p>L’enjeu pour le laboratoire communautaire ouvert La Paillasse est de mutualiser et de distribuer les ressources nécessaires à la concrétisation des projets du data challenge d’Epidemium : “À l'ère de l'intelligence collective et décentralisée, il n'y a pas de monopole pour les grandes idées”, souligne Thomas Landrain, co-fondateur de la Paillasse.</p></small></div>
+
+			<div class="col-sm-4"><small><h3>Programme</h3><p>Epidemium est un programme de recherche scientifique participatif et ouvert dédié à la compréhension du cancer grâce aux Big Data et qui prend la forme d’un data challenge, Challenge4Cancer.</p></small>
+			</div>
+
+			<div class="col-sm-4"><small><h3>Roche</h3><p>“L’étude des mégadonnées ouvertes est un champ de recherche passionnant. En tant qu’acteur de l’innovation en santé, notre ambition est de réinventer une nouvelle forme d’épidémiologie du cancer, pour en faire un véritable outil au service d’une médecine prédictive et préventive”, explique Isabelle Vitali, directrice de l’innovation et du développement des partenariats de Roche Pharma France.</p></small></div>
+		</div>
+
+	</div>
+</div>
+
+<div class="container-newsletter">
+	<div class="container">
+
+		<div id="inscrivezvous" class="">
+			<!-- Begin MailChimp Signup Form -->
+			<div id="mc_embed_signup">
+				<form action="//epidemium.us10.list-manage.com/subscribe/post?u=67976bdb5491f4305b4a24109&amp;id=9afa31ad6e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+					<div id="mc_embed_signup_scroll">
+
+						<div class="inputs-line">
+							<div class="little-title input">Abonnez-vous !</div>
+							<input type="text" value="" name="FNAME" class="input" id="mce-FNAME" placeholder="Prénom">
+							<input type="text" value="" name="LNAME" class="input" id="mce-LNAME" placeholder="Nom">
+							<input type="email" value="" name="EMAIL" class="required email input" id="mce-EMAIL" placeholder="Email*">
+							<input type="submit" value="S'inscrire à la newsletter" name="subscribe" id="mc-embedded-subscribe" class="button input">
+						</div>
+
+						<div id="mce-responses" class="clear">
+							<div class="response" id="mce-error-response" style="display:none"></div>
+							<div class="response" id="mce-success-response" style="display:none"></div>
+						</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+						<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_67976bdb5491f4305b4a24109_9afa31ad6e" tabindex="-1" value=""></div>
+					</div>
+				</form>
+			</div>
+
+			<script type='text/javascript' src='http://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text'; /*
+		 * Translated default messages for the $ validation plugin.
+		 * Locale: FR
+		 */
+			$.extend($.validator.messages, {
+				required: "Ce champ est requis.",
+				remote: "Veuillez remplir ce champ pour continuer.",
+				email: "Veuillez entrer une adresse email valide.",
+				url: "Veuillez entrer une URL valide.",
+				date: "Veuillez entrer une date valide.",
+				dateISO: "Veuillez entrer une date valide (ISO).",
+				number: "Veuillez entrer un nombre valide.",
+				digits: "Veuillez entrer (seulement) une valeur numérique.",
+				creditcard: "Veuillez entrer un numéro de carte de crédit valide.",
+				equalTo: "Veuillez entrer une nouvelle fois la même valeur.",
+				accept: "Veuillez entrer une valeur avec une extension valide.",
+				maxlength: $.validator.format("Veuillez ne pas entrer plus de {0} caractères."),
+				minlength: $.validator.format("Veuillez entrer au moins {0} caractères."),
+				rangelength: $.validator.format("Veuillez entrer entre {0} et {1} caractères."),
+				range: $.validator.format("Veuillez entrer une valeur entre {0} et {1}."),
+				max: $.validator.format("Veuillez entrer une valeur inférieure ou égale à {0}."),
+				min: $.validator.format("Veuillez entrer une valeur supérieure ou égale à {0}.")
+			});}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+			<!--End mc_embed_signup-->
+		</div>
+	</div>
+</div>
+<div class="container-join">
+	<div class="container">
+
+		<div class="row text-center">
+			<div class="col-sm-12"><h1 class="margin-bottom">Pourquoi Rejoindre la communauté Epidemium ?</h1></div>
+		</div>
+		<div class="row text-center">
+			<div class="col-sm-offset-2 col-sm-8"><p>Epidemium, c’est avant tout une communauté de curieux, passionnés ou experts des enjeux du Big Data, de l’Open Science ou de la recherche contre le cancer. Vous aussi, faites partie du mouvement, quelque soit le temps que vous voudrez y consacrer et votre domaine de prédilection.</p></div>
+		</div>
+		<div class="row text-center">
+			<div class="col-sm-12">
+				<img class="img-responsive center-block" src="images/schema_epidemium_1110px.png" alt="Flux Epidemium">
+			</div>
+		</div>
+		<div class="row margin-top">
+			<div class="col-xs-12 col-sm-8">
+				<div id="actualite" class="important">
+					<h3>Actualités</h3>
+					<p>Epidemium, c’est aussi une communauté de curieux, passionnés ou experts des enjeux du Big Data, de l’Open Science ou de la recherche contre le cancer.</p>
+				</div>
+			</div>
+			<div class="col-xs-3 col-sm-1">
+				<a href="http://www.meetup.com/fr/Epidemium/"><img class="img-responsive center-block" src="images/meetup.png" alt="Meetup"></a>
+			</div>
+			<!--<div class="col-xs-3 col-sm-1">
+                           <a href="http://wiki.epidemium.cc/"><img class="img-responsive center-block" src="images/wiki.png" alt="Wiki"></a>
+            </div>-->
+			<div class="col-xs-3 col-sm-1">
+				<a href="https://www.facebook.com/epidemiumcc"><img class="img-responsive center-block" src="images/facebook.png" alt="Facebook"></a>
+			</div>
+			<div class="col-xs-3 col-sm-1">
+				<a href="https://twitter.com/epidemium_cc"><img class="img-responsive center-block" src="images/twitter.png" alt="Twitter"></a>
+			</div>
+
+			<div class="col-xs-3 col-sm-1">
+			</div>
+
+
+		</div>
+
+		<div class="align-center margin-top">
+			<a href="http://review.epidemium.cc/" class="button button-yellow">Voir Les Résultats Du Programme 2015-2016</a>
+		</div>
+	</div>
+</div>
+
+<div class="container-challenges ">
+	<div class="container">
+		<div class="row text-center">
+			<h1>Les Challenges</h1>
+			<h2>Coming Soon !</h2>
+		</div>
+	</div>
+</div>
+
+
+
+
+<!--
+<div  ng-controller="ThemeSearchController as store" class="container-fluid">
+    <div class="row text-center">
+        <h1>Les Challenges</h1>
+    </div>
+    <div class="row text-center">
+        <div class="col-sm-12"><h3>&nbsp;</h3></div>
+    </div>
+    <div class="row">
+        <div class="container-fluid" ng-init="path = 'http://www.epidemium.cc/'">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" ng-repeat="item in store.items">
+                <theme-item-list></theme-item-list>
+            </div>
+        </div>
+    </div>
+
+</div>	-->
+
+<div class="container container-comites super-container">
 	<div id="comites" class="row text-center">
 		<div class="col-sm-12"><h1>Les comités</h1></div>
 	</div>
+
 	<div class="row">
-            <div class="col-xs-6 col-sm-3"><img class="img-responsive center-block" src="./Epidemium - Challenge for cancer _ Multiverse_files/comite1.png" alt="Dessin Membre du comité Epidemium"></div>
-            <div class="col-xs-6 col-sm-3 text-right" style="border-right-style: solid; border-width: thin;"><p></p><h3>Le comité d’éthique</h3>
-Composé de neuf membres, il accompagne epidemium sur l'ensemble des enjeux éthiques. <br><br>
-Gilles Babinet<br>Jérôme Béranger<br>Emmanuel Didier<br>Camille François<br>Muriel Londres<br>Dr Cécile Monteil<br>Pr Bernard Nordlinger<br>Me David Simhon<br>Cédric Villani<p></p></div>
-            <div class="col-xs-6 col-sm-3 text-left"><p></p><h3>Le comité scientifique</h3>
-Composé de neuf membres, il accompagne Epidemium sur les points méthodologiques.<br><br>Aurélien Alvarez<br>Dr Jean-Pierre Armand<br>Djalel Benbouzid<br>Nicolas de Cordes<br>Dr Charles Ferté<br>Thomas Gauthier<br>Dr Leila Kockler<br>Thomas Landrain<br>Pr Philippe Ravaud<p></p></div>
-            <div class="col-xs-6 col-sm-3"><img class="img-responsive center-block" src="./Epidemium - Challenge for cancer _ Multiverse_files/comite2.png" alt="Dessin Membre du comité Epidemium"></div>
+		<div class="col-xs-6 col-sm-3"><img class="img-responsive center-block" src="images/comite1.png" alt="Dessin Membre du comité Epidemium"></div>
+		<div class="col-xs-6 col-sm-3 text-right" style="border-right-style: solid; border-width: thin;"><p><h3>Le comité d’éthique</h3>
+			Composé de neuf membres, il accompagne epidemium sur l'ensemble des enjeux éthiques. </br></br>
+			Gilles Babinet</br>Jérôme Béranger</br>Emmanuel Didier</br>Camille François</br>Muriel Londres</br>Dr Cécile Monteil</br>Pr Bernard Nordlinger</br>Me David Simhon</br>Cédric Villani</p></div>
+		<div class="col-xs-6 col-sm-3 text-left"><p><h3>Le comité scientifique</h3>
+			Composé de neuf membres, il accompagne Epidemium sur les points méthodologiques.</br></br>Aurélien Alvarez</br>Dr Jean-Pierre Armand</br>Djalel Benbouzid</br>Nicolas de Cordes</br>Dr Charles Ferté</br>Thomas Gauthier</br>Dr Leila Kockler</br>Thomas Landrain</br>Pr Philippe Ravaud</p></div>
+		<div class="col-xs-6 col-sm-3"><img class="img-responsive center-block" src="images/comite2.png" alt="Dessin Membre du comité Epidemium"></div>
 	</div>
-	<div class="row text-center">
-		<div class="col-sm-12"><h3><a href="http://wiki.epidemium.cc/wiki/Comit%C3%A9_d&#39;%C3%A9thique">Découvrir les comités</a></h3></div>
+	<div class="row text-center margin-top">
+		<div class="col-sm-12"><h3><a href="http://wiki.epidemium.cc/wiki/Comit%C3%A9_d'%C3%A9thique">Découvrir les comités</a></h3></div>
 	</div>
-	<div class="row text-center">
+	<div class="row text-center margin-top">
 		<div class="col-xs-12  col-sm-offset-2 col-sm-8">
-                      <div class="important">
-                           <h3>Les valeurs</h3>
-                           <img class="img-responsive center-block" src="./Epidemium - Challenge for cancer _ Multiverse_files/valeurs.png" alt="Les valeurs">
-                    </div>
-               </div>
-	</div>
-	<hr class="fancy-line">
-
-	<div id="partenaires" class="row text-center">
-		<div class="col-sm-12"><h1>Experts &amp; Ambassadeurs</h1></div>
-	</div>
-	<div class="row text-center">
-		<div class="col-sm-offset-2 col-sm-8">
-<p>
-Epidemium, c’est aussi un réseau d’experts qui nous accompagne pour pousser l’initiative plus loin et que nous sollicitons pour aider les équipes dans la réalisation de leur projet. <br>
-<a href="https://docs.google.com/forms/d/1utt0NV3LWKHrAYbm7__eJfLBGPqq-IYjx_gApqX1I2o/edit" target="_blank"> Devenez expert !</a>
-</p>
-<p>
-L'initiative d'Epidemium vous intéresse et vous souhaitez la faire connaître autour de vous ? <br>
-<a href="https://docs.google.com/forms/d/15x9FngwlytRhT0oQ5JjJ2-f8CJHqgVg1B9o6GzPSr_w/edit" target="_blank">Vous pouvez devenir ambassadeur !</a>
-</p>
-              </div>
-	</div>
-
-	<div id="partenaires" class="row text-center">
-		<div class="col-sm-12"><h4>Partenaires techniques</h4></div>
-	</div>
-	<div class="row text-center">
-		<div class="col-xs-4 col-sm-offset-3 col-sm-2"><p><a href="http://hypercube.bearingpoint.com/"><img class="img-responsive" src="./Epidemium - Challenge for cancer _ Multiverse_files/LogoHyperCubeLandingPage_cx5lgb.png" alt="HyperCube"></a></p></div>
-		<div class="col-xs-4 col-sm-2"><p><a href="https://www.dataiku.com/"><img class="img-responsive" src="./Epidemium - Challenge for cancer _ Multiverse_files/LogosPartenaires_ganqoq.png" alt="Dataiku"></a></p></div>
-		<div class="col-xs-4 col-sm-2"><p><a href="https://www.teralab-datascience.fr/"><img class="img-responsive" src="./Epidemium - Challenge for cancer _ Multiverse_files/teralab.png" alt="teralab"></a></p></div>
-	</div>
-
-
-	<div class="row text-center">
-		<div class="col-sm-12"><h4>Ils nous soutiennent</h4></div>
-	</div>
-	<div class="row text-center">
-		<div class="col-xs-4 col-sm-2">
-			<p><a href="http://www.cancer-campus.com/fr/accueil"><img class="img-responsive" src="./Epidemium - Challenge for cancer _ Multiverse_files/LogoCancerCampusLandingPage_kzjylm.png" alt="cancer-campus"></a></p>
-		</div>
-		<div class="col-xs-4 col-sm-2">
-			<p><a href="http://www.capdigital.com/"><img class="img-responsive" src="./Epidemium - Challenge for cancer _ Multiverse_files/LogoCapDigitalLandingPage_tnbzko.png" alt="capdigital"></a></p>
-		</div>
-
-		<div class="col-xs-4 col-sm-2">
-			<p><a href="http://www.globalknowledge.fr/"><img class="img-responsive" src="./Epidemium - Challenge for cancer _ Multiverse_files/LogoGlobalKnowledgeLandingPage_zwpvcy.png" alt="globalknowledge"></a></p>
-		</div>
-		<div class="col-xs-4 col-sm-2">
-			<p><a href="http://www.club-jade.fr/"><img class="img-responsive" src="./Epidemium - Challenge for cancer _ Multiverse_files/Logo_Jade_f2ldfo.png" alt="club-jade"></a></p>
-		</div>
-		<div class="col-xs-4 col-sm-2">
-			<p><a href="http://www.hackinghealth.ca/"><img class="img-responsive" src="./Epidemium - Challenge for cancer _ Multiverse_files/HackingHealth_raxucy.png" alt="hackinghealth"></a></p>
-		</div>
-
-		<div class="col-xs-4 col-sm-2">
-			<p><a href="https://www.mines-telecom.fr/"><img class="img-responsive" src="./Epidemium - Challenge for cancer _ Multiverse_files/mines.png" alt="Institut Mines Telecom"></a></p>
-		</div>
-		<div class="col-xs-offset-2 col-xs-4 col-sm-offset-4 col-sm-2">
-			<p><a href="http://bress.healthcare/"><img class="img-responsive" src="./Epidemium - Challenge for cancer _ Multiverse_files/LogoBresseHealthcareLandingPage_jnxzhl.png" alt="bress.healthcare"></a></p>
-		</div>
-		<div class="col-xs-4 col-sm-2">
-			<p><a href="http://www.theschoolab.com/"><img class="img-responsive" src="./Epidemium - Challenge for cancer _ Multiverse_files/LogosPartenaires_uf6mnw.png" alt="theschoolab"></a></p>
+			<div class="important">
+				<h3>Les valeurs</h3>
+				<img class="img-responsive center-block" src="images/valeurs.png" alt="Les valeurs">
+			</div>
 		</div>
 	</div>
+</div>
+
+<div class="container-partenaires super-container">
+	<div class="container">
+		<div id="partenaires" class="row text-center">
+			<div class="col-sm-12"><h1>Experts & Ambassadeurs</h1></div>
+		</div>
+		<div class="row text-center">
+			<div class="col-sm-offset-2 col-sm-8">
+				<p>
+					Epidemium, c’est aussi un réseau d’experts qui nous accompagne pour pousser l’initiative plus loin et que nous sollicitons pour aider les équipes dans la réalisation de leur projet. </br>
+					<a href="https://docs.google.com/forms/d/15x9FngwlytRhT0oQ5JjJ2-f8CJHqgVg1B9o6GzPSr_w/edit" target="_blank"> Devenez expert !</a>
+				</p>
+				<p>
+					L'initiative d'Epidemium vous intéresse et vous souhaitez la faire connaître autour de vous ? </br>
+					<a href="https://docs.google.com/forms/d/1utt0NV3LWKHrAYbm7__eJfLBGPqq-IYjx_gApqX1I2o/edit" target="_blank">Vous pouvez devenir ambassadeur !</a>
+				</p>
+			</div>
+		</div>
+
+		<div id="partenaires" class="row text-center">
+			<div class="col-sm-12"><h4>Partenaires techniques</h4></div>
+		</div>
+		<div class="row text-center">
+			<div class="col-xs-4 col-sm-offset-3 col-sm-2"><p><a href='http://hypercube.bearingpoint.com/'><img class="img-responsive" src="bundles/tdoduser/images/LogoHyperCubeLandingPage_cx5lgb.png" alt="HyperCube"></a></p></div>
+			<div class="col-xs-4 col-sm-2"><p><a href='https://www.dataiku.com/'><img class="img-responsive" src="bundles/tdoduser/images/LogosPartenaires_ganqoq.png" alt="Dataiku"></a></p></div>
+			<div class="col-xs-4 col-sm-2"><p><a href='https://www.teralab-datascience.fr/'><img class="img-responsive" src="images/teralab.png" alt="teralab"></a></p></div>
+		</div>
+
+		<div class="white-block">
+
+			<div class="row text-center">
+				<div class="col-sm-12"><h3 class="margin-bottom">Ils nous soutiennent</h3></div>
+			</div>
+			<div class="row text-center">
+				<div class="col-xs-4 col-sm-2">
+					<p><a href='http://www.cancer-campus.com/fr/accueil'><img class="img-responsive" src="bundles/tdoduser/images/LogoCancerCampusLandingPage_kzjylm.png" alt="cancer-campus"></a></p>
+				</div>
+				<div class="col-xs-4 col-sm-2">
+					<p><a href='http://www.capdigital.com/'><img class="img-responsive" src="bundles/tdoduser/images/LogoCapDigitalLandingPage_tnbzko.png" alt="capdigital"></a></p>
+				</div>
+
+				<div class="col-xs-4 col-sm-2">
+					<p><a href='http://www.globalknowledge.fr/'><img class="img-responsive" src="bundles/tdoduser/images/LogoGlobalKnowledgeLandingPage_zwpvcy.png" alt="globalknowledge"></a></p>
+				</div>
+				<div class="col-xs-4 col-sm-2">
+					<p><a href='http://www.club-jade.fr/'><img class="img-responsive" src="bundles/tdoduser/images/Logo_Jade_f2ldfo.png" alt="club-jade"></a></p>
+				</div>
+				<div class="col-xs-4 col-sm-2">
+					<p><a href='http://www.hackinghealth.ca/'><img class="img-responsive" src="bundles/tdoduser/images/HackingHealth_raxucy.png" alt="hackinghealth"></a></p>
+				</div>
+
+				<div class="col-xs-4 col-sm-2">
+					<p><a href='https://www.mines-telecom.fr/'><img class="img-responsive" src="images/mines.png" alt="Institut Mines Telecom"></a></p>
+				</div>
+				<div class="col-xs-offset-2 col-xs-4 col-sm-offset-4 col-sm-2">
+					<p><a href='http://bress.healthcare/'><img class="img-responsive" src="bundles/tdoduser/images/LogoBresseHealthcareLandingPage_jnxzhl.png" alt="bress.healthcare"></a></p>
+				</div>
+				<div class="col-xs-4 col-sm-2">
+					<p><a href='http://www.theschoolab.com/'><img class="img-responsive" src="bundles/tdoduser/images/LogosPartenaires_uf6mnw.png" alt="theschoolab"></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- <hr class="fancy-line"></hr> -->
 
 
 
-	<hr class="fancy-line">
-	
 
-	
-
-
+<!--
 	<div id="equipe" class="row text-center">
 		<div class="col-sm-12"><h1>L'équipe</h1></div>
 	</div>
 	<div class="row">
-            <div class="col-xs-4 col-sm-3"><img class="img-responsive center-block" src="./Epidemium - Challenge for cancer _ Multiverse_files/team1.png" alt="Dessin Membre de l&#39;équipe Epidemium"></div>
+            <div class="col-xs-4 col-sm-3"><img class="img-responsive center-block" src="images/team1.png" alt="Dessin Membre de l'équipe Epidemium"></div>
             <div class="col-xs-8 col-sm-3">
 
 <h3>Mehdi Benchoufi</h3>
 <p>Coordinateur du projet
-<br></p>
+<br/></p>
 <h3>Karine Lévy-Heidmann</h3>
 <p>Animation du réseau
-<br><br></p>
+<br/><br/></p>
 <h3>Youcef Maâmra</h3>
 <p>Data</p>
 
@@ -322,228 +400,152 @@ L'initiative d'Epidemium vous intéresse et vous souhaitez la faire connaître a
 
 <h3>Olivier de Fresnoye</h3>
 <p>Coordinateur du projet
-<br></p>
+<br/></p>
 <h3>Justyna Lisowska</h3>
-<p>Curation &amp; communication
+<p>Curation & communication
 scientifique
-<br></p>
+<br/></p>
 <h3>Ozanne Tauvel-Mocquet</h3>
 <p>Communication</p>
 
 </div>
-            <div class="col-xs-4 col-sm-3"><img class="img-responsive center-block" src="./Epidemium - Challenge for cancer _ Multiverse_files/team2.png" alt="Dessin Membre de l&#39;équipe Epidemium"></div>
+            <div class="col-xs-4 col-sm-3"><img class="img-responsive center-block" src="images/team2.png" alt="Dessin Membre de l'équipe Epidemium"></div>
 	</div>
 
 
-<hr class="fancy-line">
+<hr class="fancy-line"></hr>
+	-->
 
 
-
-	
-
-
-
-
-	<div id="inscrivezvous" class="well well-lg banner">
-	<!-- Begin MailChimp Signup Form -->
-	<link href="./Epidemium - Challenge for cancer _ Multiverse_files/classic-081711.css" rel="stylesheet" type="text/css">
-	<style type="text/css">
-		#mc_embed_signup{background:rgba(0,0,0,0); clear:left; /*font:14px Helvetica,Arial,sans-serif;*/ color:#FFF; }
-		/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-		  We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-		.mc-field-group input {
-			display: block;
-			width: 100%;
-			padding: 8px 0px;
-			text-indent: 2%;
-			color: black; }
-	</style>
-	<div id="mc_embed_signup">
-	<form action="http://epidemium.us10.list-manage.com/subscribe/post?u=67976bdb5491f4305b4a24109&amp;id=9afa31ad6e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate ng-pristine ng-valid" target="_blank" novalidate="novalidate">
-		<div id="mc_embed_signup_scroll">
-		<h2>Inscrivez-vous à la newsletter</h2>
-	<div class="indicates-required"><span class="asterisk">*</span>champs requis</div>
-	<div class="mc-field-group">
-		<label for="mce-EMAIL">Adresse Email <span class="asterisk">*</span>
-	</label>
-		<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" aria-required="true">
-	</div>
-	<div class="mc-field-group">
-		<label for="mce-FNAME">Prénom </label>
-		<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
-	</div>
-	<div class="mc-field-group">
-		<label for="mce-LNAME">Nom </label>
-		<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
-	</div>
-		<div id="mce-responses" class="clear">
-			<div class="response" id="mce-error-response" style="display:none"></div>
-			<div class="response" id="mce-success-response" style="display:none"></div>
-		</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-		<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_67976bdb5491f4305b4a24109_9afa31ad6e" tabindex="-1" value=""></div>
-		<div class="clear"><input type="submit" value="S&#39;inscrire" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-		</div>
-	</form>
-	</div>
-	<script type="text/javascript" src="./Epidemium - Challenge for cancer _ Multiverse_files/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text'; /*
-	 * Translated default messages for the $ validation plugin.
-	 * Locale: FR
-	 */
-	$.extend($.validator.messages, {
-			required: "Ce champ est requis.",
-			remote: "Veuillez remplir ce champ pour continuer.",
-			email: "Veuillez entrer une adresse email valide.",
-			url: "Veuillez entrer une URL valide.",
-			date: "Veuillez entrer une date valide.",
-			dateISO: "Veuillez entrer une date valide (ISO).",
-			number: "Veuillez entrer un nombre valide.",
-			digits: "Veuillez entrer (seulement) une valeur numérique.",
-			creditcard: "Veuillez entrer un numéro de carte de crédit valide.",
-			equalTo: "Veuillez entrer une nouvelle fois la même valeur.",
-			accept: "Veuillez entrer une valeur avec une extension valide.",
-			maxlength: $.validator.format("Veuillez ne pas entrer plus de {0} caractères."),
-			minlength: $.validator.format("Veuillez entrer au moins {0} caractères."),
-			rangelength: $.validator.format("Veuillez entrer entre {0} et {1} caractères."),
-			range: $.validator.format("Veuillez entrer une valeur entre {0} et {1}."),
-			max: $.validator.format("Veuillez entrer une valeur inférieure ou égale à {0}."),
-			min: $.validator.format("Veuillez entrer une valeur supérieure ou égale à {0}.")
-	});}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-	<!--End mc_embed_signup-->
-	</div>
-
-
-
-<hr class="fancy-line">
-	
+<div class="presse-container">
 	<div id="actu" class="row text-center">
 		<div class="col-sm-12"><h1>Presse</h1></div>
 	</div>
 	<div class="row text-center">
 		<div class="col-xs-3 col-sm-offset-2 col-sm-2">
-			<p><a href="http://www.industrie-techno.com/open-innovation-roche-s-associe-au-biohackerspace-la-paillasse.39105"><img class="img-responsive center-block" src="./Epidemium - Challenge for cancer _ Multiverse_files/1e4fe0c8583240fdb912d0ec61be4998_na70bp.png" alt="IT"></a></p>
+			<p><a href='http://www.industrie-techno.com/open-innovation-roche-s-associe-au-biohackerspace-la-paillasse.39105'><img class="img-responsive center-block" src="bundles/tdoduser/images/1e4fe0c8583240fdb912d0ec61be4998_na70bp.png" alt="IT"></a></p>
 		</div>
 		<div class="col-xs-3 col-sm-2">
-			<p><a href="http://www.itespresso.fr/roche-la-paillasse-mieux-cerner-cancer-big-data-101052.html"><img class="img-responsive center-block" src="./Epidemium - Challenge for cancer _ Multiverse_files/b7c3e5f9597a4809b464532abeae2c94_spqjhh.png" alt="IT"></a></p>
+			<p><a href='http://www.itespresso.fr/roche-la-paillasse-mieux-cerner-cancer-big-data-101052.html'><img class="img-responsive center-block" src="bundles/tdoduser/images/b7c3e5f9597a4809b464532abeae2c94_spqjhh.png" alt="IT"></a></p>
 		</div>
 		<div class="col-xs-3 col-sm-2">
-			<p><a href="http://www.industrie.com/pharma/roche-s-associe-a-la-paillasse-pour-lancer-epidemium,65719"><img class="img-responsive center-block" src="./Epidemium - Challenge for cancer _ Multiverse_files/b40e555af8c24a62922c43aa69f3f4b9_x9xbe5.jpg" alt="IndustriePharma"></a></p>
+			<p><a href='http://www.industrie.com/pharma/roche-s-associe-a-la-paillasse-pour-lancer-epidemium,65719'><img class="img-responsive center-block" src="bundles/tdoduser/images/b40e555af8c24a62922c43aa69f3f4b9_x9xbe5.jpg" alt="IndustriePharma"></a></p>
 		</div>
 		<div class="col-xs-3 col-sm-2">
-			<p><a href="http://www.echosciences-grenoble.fr/actualites/epidemium-lutter-contre-le-cancer-avec-le-big-data"><img class="img-responsive center-block img-rounded" src="./Epidemium - Challenge for cancer _ Multiverse_files/9d1791f775d8492d83eded0cbb7077bf_tc6a6x.jpg" alt="Echoscience"></a></p>
+			<p><a href='http://www.echosciences-grenoble.fr/actualites/epidemium-lutter-contre-le-cancer-avec-le-big-data'><img class="img-responsive center-block img-rounded" src="bundles/tdoduser/images/9d1791f775d8492d83eded0cbb7077bf_tc6a6x.jpg" alt="Echoscience"></a></p>
 		</div>
 	</div>
 	<div class="row text-center">
 		<div class="col-xs-3  col-sm-offset-2 col-sm-2">
-			<p><a href="http://biopharmanalyses.fr/special-therapie-genique-la-therapie-genique-va-trouver-sa-place-dans-larsenal-therapeutique/"><img class="img-responsive center-block" src="./Epidemium - Challenge for cancer _ Multiverse_files/deb0b28a1c6f4ed39c9a34a54faae8b3_ejqjhg.jpg" alt="Biopharm"></a></p>
+			<p><a href='http://biopharmanalyses.fr/special-therapie-genique-la-therapie-genique-va-trouver-sa-place-dans-larsenal-therapeutique/'><img class="img-responsive center-block" src="bundles/tdoduser/images/deb0b28a1c6f4ed39c9a34a54faae8b3_ejqjhg.jpg" alt="Biopharm"></a></p>
 		</div>
 		<div class="col-xs-3 col-sm-2">
-			<p><a href="http://www.maddyness.com/prospective/2015/08/26/openinno-roche/"><img class="img-responsive center-block" src="./Epidemium - Challenge for cancer _ Multiverse_files/d97d543e95d74dcf8f8b9cb9cf44442e_bpohrk.jpg" alt="Maddyness"></a></p>
+			<p><a href='http://www.maddyness.com/prospective/2015/08/26/openinno-roche/'><img class="img-responsive center-block" src="bundles/tdoduser/images/d97d543e95d74dcf8f8b9cb9cf44442e_bpohrk.jpg" alt="Maddyness"></a></p>
 		</div>
 		<div class="col-xs-3 col-sm-2">
-			<p><a href="http://sciencespourtous.univ-lyon1.fr/cedric-villani-scientifiques-doivent-reprendre-main-partage-connaissances/"><img class="img-responsive center-block" src="./Epidemium - Challenge for cancer _ Multiverse_files/ea09488fb6474baeb297fda936e68d44_ciqys1.png" alt="Sciences pour tous"></a></p>
+			<p><a href='http://sciencespourtous.univ-lyon1.fr/cedric-villani-scientifiques-doivent-reprendre-main-partage-connaissances/'><img class="img-responsive center-block" src="bundles/tdoduser/images/ea09488fb6474baeb297fda936e68d44_ciqys1.png" alt="Sciences pour tous"></a></p>
 		</div>
 		<div class="col-xs-3 col-sm-2">
-			<p><a href="http://www.capdigital.com/la-paillasse-partenariat-cap-digital-epidemium-epidemiologie-cancer/"><img class="img-responsive center-block img-rounded" src="./Epidemium - Challenge for cancer _ Multiverse_files/56102a3e92304433b339809d6be521aa_pckl3m.jpg" alt="Cap Digital"></a></p>
+			<p><a href='http://www.capdigital.com/la-paillasse-partenariat-cap-digital-epidemium-epidemiologie-cancer/'><img class="img-responsive center-block img-rounded" src="bundles/tdoduser/images/56102a3e92304433b339809d6be521aa_pckl3m.jpg" alt="Cap Digital"></a></p>
 		</div>
 	</div>
 	<div class="row text-center">
 		<div class="col-xs-offset-4  col-xs-4 col-sm-offset-5 col-sm-2">
-			<p><a href="http://recherche.cnam.fr/equipes/gba/epidemium-challenge4cancer-758165.kjsp"><img class="img-responsive center-block" src="./Epidemium - Challenge for cancer _ Multiverse_files/bdb6b2f94921476891158644ce41f780_ucsusa.png" alt="Le cnam"></a></p>
+			<p><a href='http://recherche.cnam.fr/equipes/gba/epidemium-challenge4cancer-758165.kjsp'><img class="img-responsive center-block" src="bundles/tdoduser/images/bdb6b2f94921476891158644ce41f780_ucsusa.png" alt="Le cnam"></a></p>
 		</div>
 	</div>
-	
-	<div class="nous-contacter"><a href="mailto:contact@epidemium.cc">Nous contacter</a></div>
-	
 </div>
-		
-		<!-- FOOTER -->
-		<div class="navbar-default footer">
-			<div class="container">
 
-				<div class="row">
-					<div class="col-sm-3">
-						<h2>Epidemium</h2>
-						<ul>
-							<li><a href="http://localhost:8888/Epidemium/index.html#">Accueil</a></li>
-							<li><a href="http://localhost:8888/Epidemium/theme/search/index.html">Les Challenges</a></li>
-							<li><a href="http://localhost:8888/Epidemium/search/user/index.html">Rechercher un Profil</a></li>
-							<li><a href="http://localhost:8888/Epidemium/project/search/index.html">Rechercher un Projet</a></li>
-							<li><a href="http://localhost:8888/Epidemium/images/reglement.pdf">Règlement</a></li>
-							<li><a href="http://wiki.epidemium.cc/">Wiki</a></li>
-							<li><a href="http://data.epidemium.cc/fr#">Data</a></li>
-							<li><a href="http://localhost:8888/Epidemium/images/Communiqu%C3%A9%20Roche%20La%20Paillasse%20du%2006.07.15%20Lancement%20Epidemium.pdf">Communiqué de presse</a></li>
-							<!--<li><a href='https://www.google.fr/maps/place/La+Paillasse/@48.868451,2.352168,17z/data=!3m1!4b1!4m2!3m1!1s0x47e66e10decdd5bf:0x35eb45e6acfdc9a0'><img style="width: 25px;" src="bundles/tdoduser/images/FindUs_etlnvu.png" alt="Nous Trouver"> Nous trouver</a></li>-->
-						</ul>
-					</div>
-					<div class="col-sm-3">
-						<h2>Nous contacter</h2>
-						<ul>
-							<li><a href="mailto:contact@epidemium.cc">Général</a></li>
-							<li><a href="mailto:data@epidemium.cc">Données</a></li>
-							<li><a href="mailto:wiki@epidemium.cc">Wiki</a></li>
-							<li><a href="mailto:ethique@epidemium.cc">Question éthique</a></li>
-							<li><a href="mailto:methodologie@epidemium.cc">Question scientifique</a></li>
-						</ul>
-					</div>
-					<div class="col-sm-3">
-						<h2>Rejoignez-nous</h2>
-						<ul>
-							<li><a href="https://www.facebook.com/epidemiumcc"><img style="width: 25px;" src="./Epidemium - Challenge for cancer _ Multiverse_files/aa5207ace083464395302a6ab3ca7f49_hbdb1i.png" alt="Facebook"> Facebook</a></li>
-							<li><a href="https://twitter.com/epidemium_cc"><img style="width: 25px;" src="./Epidemium - Challenge for cancer _ Multiverse_files/738a075450ea4013a12a4cbea773a8bb_mpab06.png" alt="Twitter"> Twitter</a></li>
-							<li><a href="http://www.meetup.com/fr/Epidemium"><img style="width: 25px;" src="./Epidemium - Challenge for cancer _ Multiverse_files/meetup80px.png" alt="Meetup"> Meetup</a></li>
-							<li><a href="https://plus.google.com/u/0/communities/114916320676400256400?cfem=1"><img style="width: 25px;" src="./Epidemium - Challenge for cancer _ Multiverse_files/b06fa324eae943e0b81f19d5243bf3cc_aaql7r.png" alt="Google+"> Google+</a></li>
-							<li><a href="https://www.youtube.com/channel/UCox7qtCL12TAzGf8xdRwN1A"><img style="width: 25px;" src="./Epidemium - Challenge for cancer _ Multiverse_files/855f343ff1a043b49d50f11475947dac_ycbmt1.png" alt="Youtube"> Youtube</a></li>
-							<li><a href="https://instagram.com/epidemium_cc"><img style="width: 25px;" src="./Epidemium - Challenge for cancer _ Multiverse_files/e62b7365b42d49ddb23c659fa763f4fa_i73zz7.png" alt="Instagram"> Instagram</a></li>
-						</ul>							
-					</div>
-					<div class="col-sm-3">
-						<h2>La plate-forme</h2>
-						<ul>
-							<li><a href="http://localhost:8888/Epidemium/images/cgu.pdf">CGU</a></li>
-							<li><a href="http://localhost:8888/Epidemium/index.html">Mentions Légales</a></li>
-							<li><a href="http://localhost:8888/Epidemium/index.html">Features&nbsp;<i class="fa fa-rss"></i></a></li>
-							<li><a href="mailto:contact@3do2.fr">Report Bug &amp; Feedback&nbsp;<i class="fa fa-bug"></i></a></li>
-						</ul>							
-					</div>	
-				</div>
-				<hr>
-				<div class="row">
-					<div class="col-sm-offset-4 col-sm-2 text-center" style="margin-top: 10px;">
-						<a href="http://www.roche.fr/"><img class="img-responsive center-block" src="./Epidemium - Challenge for cancer _ Multiverse_files/logo-roche80px.png" alt="Roche"></a>
-					</div>
-					<!--
-					<div class="col-sm-4 text-center" style="margin-top: 15px;">
-						<img class="img-responsive center-block" src="/images/epidemium_logo_transp_orange_48_fccxgx.png"></img>© 2016 Epidemium
-					</div>
-					-->
-					<div class="col-sm-2 text-center" style="margin-top: 10px;">
-						<a href="http://lapaillasse.org/"><img class="img-responsive center-block" src="./Epidemium - Challenge for cancer _ Multiverse_files/logo-paillasse.png" alt="La Paillasse"></a>
-					</div>
-				</div>
+<!-- FOOTER -->
+<div class="footer">
+	<div class="container">
+
+		<div class="row">
+			<div class="col-sm-3">
+				<h2>Epidemium</h2>
+				<ul>
+					<li><strong>Général</strong> : <a href="mailto:contact@epidemium.cc">contact@epidemium.cc</a></li>
+					<li><strong>Données</strong> : <a href="mailto:data@epidemium.cc">data@epidemium.cc</a></li>
+					<li><strong>Wiki</strong> : <a href="mailto:wiki@epidemium.cc">wiki@epidemium.cc</a></li>
+					<li><strong>Questions éthique</strong> : <a href="mailto:wiki@epidemium.cc">ethique@epidemium.cc</a></li>
+					<li><strong>Questions scientifique</strong> : <a href="mailto:wiki@epidemium.cc">methodologie@epidemium.cc</a></li>
+				</ul>
 			</div>
-        
-
-
-			<script type="text/javascript" src="./Epidemium - Challenge for cancer _ Multiverse_files/angular_1.4.8.min.js"></script>
-			<script type="text/javascript" src="./Epidemium - Challenge for cancer _ Multiverse_files/ui-bootstrap-tpls-0.14.3.min.js"></script>
-			<script type="text/javascript" src="./Epidemium - Challenge for cancer _ Multiverse_files/angular-animate-1.4.7.js"></script>
-			<script type="text/javascript" src="./Epidemium - Challenge for cancer _ Multiverse_files/app.js"></script>
-			<script type="text/javascript" src="./Epidemium - Challenge for cancer _ Multiverse_files/user.js"></script>
-			<script type="text/javascript" src="./Epidemium - Challenge for cancer _ Multiverse_files/project.js"></script>
-			<script type="text/javascript" src="./Epidemium - Challenge for cancer _ Multiverse_files/theme.js"></script>
-			<script type="text/javascript" src="./Epidemium - Challenge for cancer _ Multiverse_files/config.js"></script>
-
-			<script src="./Epidemium - Challenge for cancer _ Multiverse_files/textAngular-rangy.min.js"></script>
-			<script src="./Epidemium - Challenge for cancer _ Multiverse_files/textAngular-sanitize.min.js"></script>
-			<script src="./Epidemium - Challenge for cancer _ Multiverse_files/textAngular.min.js"></script>
-
-			<script src="./Epidemium - Challenge for cancer _ Multiverse_files/ng-file-upload.min.js"></script>
-			<script src="./Epidemium - Challenge for cancer _ Multiverse_files/ng-file-upload-shim.min.js"></script>
-			<script src="./Epidemium - Challenge for cancer _ Multiverse_files/ng-img-crop.js"></script>
-			
-					
+			<div class="col-sm-3">
+				<h2>Nous suivre</h2>
+				<ul>
+					<li><a href='https://www.facebook.com/epidemiumcc'>Facebook</a></li>
+					<li><a href='https://twitter.com/epidemium_cc'>Twitter</a></li>
+					<li><a href='http://www.meetup.com/fr/Epidemium'>Meetup</a></li>
+					<li><a href='https://plus.google.com/u/0/communities/114916320676400256400?cfem=1'>Google+</a></li>
+					<li><a href='https://www.youtube.com/channel/UCox7qtCL12TAzGf8xdRwN1A'>Youtube</a></li>
+					<li><a href='https://instagram.com/epidemium_cc'>Instagram</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-3">
+				<h2>Nous contacter</h2>
+				<ul>
+					<li><a href='#' target="_blank">Réglement</a></li>
+					<li><a href='#' target="_blank">Wiki</a></li>
+					<li><a href='#' target="_blank">OpenData</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-3">
+				<h2>Presse</h2>
+				<ul>
+					<li><a href="#">Télécharger le communiqué de presse</a></li>
+					<li>
+						<a class="item-image" href='http://recherche.cnam.fr/equipes/gba/epidemium-challenge4cancer-758165.kjsp'><img class="" src="bundles/tdoduser/images/bdb6b2f94921476891158644ce41f780_ucsusa.png" alt="Le cnam"></a>
+						<a class="item-image" href='http://www.industrie-techno.com/open-innovation-roche-s-associe-au-biohackerspace-la-paillasse.39105'><img src="bundles/tdoduser/images/1e4fe0c8583240fdb912d0ec61be4998_na70bp.png" alt="IT"></a>
+						<a class="item-image" href='http://www.itespresso.fr/roche-la-paillasse-mieux-cerner-cancer-big-data-101052.html'><img src="bundles/tdoduser/images/b7c3e5f9597a4809b464532abeae2c94_spqjhh.png" alt="IT"></a>
+						<a class="item-image" href='http://www.industrie.com/pharma/roche-s-associe-a-la-paillasse-pour-lancer-epidemium,65719'><img src="bundles/tdoduser/images/b40e555af8c24a62922c43aa69f3f4b9_x9xbe5.jpg" alt="IndustriePharma"></a>
+						<a class="item-image" href='http://www.echosciences-grenoble.fr/actualites/epidemium-lutter-contre-le-cancer-avec-le-big-data'><img src="bundles/tdoduser/images/9d1791f775d8492d83eded0cbb7077bf_tc6a6x.jpg" alt="Echoscience"></a>
+						<a class="item-image" href='http://biopharmanalyses.fr/special-therapie-genique-la-therapie-genique-va-trouver-sa-place-dans-larsenal-therapeutique/'><img src="bundles/tdoduser/images/deb0b28a1c6f4ed39c9a34a54faae8b3_ejqjhg.jpg" alt="Biopharm"></a>
+						<a class="item-image" href='http://www.maddyness.com/prospective/2015/08/26/openinno-roche/'><img src="bundles/tdoduser/images/d97d543e95d74dcf8f8b9cb9cf44442e_bpohrk.jpg" alt="Maddyness"></a>
+						<a class="item-image" href='http://sciencespourtous.univ-lyon1.fr/cedric-villani-scientifiques-doivent-reprendre-main-partage-connaissances/'><img src="bundles/tdoduser/images/ea09488fb6474baeb297fda936e68d44_ciqys1.png" alt="Sciences pour tous"></a>
+						<a class="item-image" href='http://www.capdigital.com/la-paillasse-partenariat-cap-digital-epidemium-epidemiologie-cancer/'><img src="bundles/tdoduser/images/56102a3e92304433b339809d6be521aa_pckl3m.jpg" alt="Cap Digital"></a>
+					</li>
+				</ul>
+			</div>
 		</div>
-    
+		<hr/>
+		<div class="row">
+			<div class="col-sm-offset-4 col-sm-2 text-center" style="margin-top: 10px;">
+				<a href='http://www.roche.fr/'><img class="img-responsive center-block" src="images/logo-roche80px.png" alt="Roche"></a>
+			</div>
+			<!--
+            <div class="col-sm-4 text-center" style="margin-top: 15px;">
+                <img class="img-responsive center-block" src="/images/epidemium_logo_transp_orange_48_fccxgx.png"></img>© 2016 Epidemium
+            </div>
+            -->
+			<div class="col-sm-2 text-center" style="margin-top: 10px;">
+				<a href='http://lapaillasse.org/'><img class="img-responsive center-block" src="images/logo-paillasse.png" alt="La Paillasse"></a>
+			</div>
+		</div>
+	</div>
 
 
-<!-- Localized --><input id="textAngular-editableFix-010203040506070809" class="ta-hidden-input" aria-hidden="true" unselectable="on" tabindex="-1"></body></html>
+
+	<script type="text/javascript" src="js/angular_1.4.8.min.js"></script>
+	<script type="text/javascript" src="js/ui-bootstrap-tpls-0.14.3.min.js"></script>
+	<script type="text/javascript" src="js/angular-animate-1.4.7.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/user.js"></script>
+	<script type="text/javascript" src="js/project.js"></script>
+	<script type="text/javascript" src="js/theme.js"></script>
+	<script type="text/javascript" src="js/config.js"></script>
+
+	<script src="js/textAngular-rangy.min.js"></script>
+	<script src="js/textAngular-sanitize.min.js"></script>
+	<script src="js/textAngular.min.js"></script>
+
+	<script src="js/ng-file-upload.min.js"></script>
+	<script src="js/ng-file-upload-shim.min.js"></script>
+	<script src="js/ng-img-crop.js"></script>
+
+
+</div>
+</body>
+</html>
+
+<!-- Localized -->
