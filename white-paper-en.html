@@ -1,0 +1,278 @@
+
+<!DOCTYPE html>
+<html ng-app="store">
+<head>
+	<meta https-equiv="Content-Type" content="text/html; charset=utf-8" >
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+	<!-- change the color of address bar -->
+	<meta name="theme-color" content="#002690">
+
+
+
+	<title>Epidemium</title>
+	<meta name="description" content="Epidemium est un programme de recherche scientifique pour la compréhension du cancer: Big Data, open-source, collaboratif. Ouvert à tous les profils et qualifications." />
+	<meta name="robots" content="INDEX, FOLLOW">
+
+	<!-- Schema.org markup for Google+ -->
+	<meta itemprop="name" content="Epidemium">
+	<meta itemprop="description" content="Epidemium est un programme de recherche scientifique pour la compréhension du cancer: Big Data, open-source, collaboratif. Ouvert à tous les profils et qualifications.">
+	<meta itemprop="image" content="https://www.epidemium.cc/images/EPDM_visuel_Partenaires_banner.jpg">
+
+	<!-- Twitter Card data -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="https://www.epidemium.cc">
+	<meta name="twitter:title" content="Epidemium">
+	<meta name="twitter:description" content="Epidemium est un programme de recherche scientifique pour la compréhension du cancer: Big Data, open-source, collaboratif. Ouvert à tous les profils et qualifications.">
+	<meta name="twitter:creator" content="Epidemium">
+	<!-- Twitter summary card with large image must be at least 280x150px -->
+	<meta name="twitter:image:src" content="https://www.epidemium.cc/images/EPDM_visuel_Partenaires_banner.jpg">
+
+	<!-- Open Graph data -->
+	<meta property="og:title" content="Epidemium" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="" />
+	<meta property="og:image" content="https://www.epidemium.cc/images/EPDM_visuel_Partenaires_banner.jpg" />
+	<meta property="og:description" content="Epidemium est un programme de recherche scientifique pour la compréhension du cancer: Big Data, open-source, collaboratif. Ouvert à tous les profils et qualifications." />
+	<meta property="og:site_name" content="Epidemium" />
+
+
+	<!-- BOOTSTRAP CORE STYLE CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<!-- Glyphicon -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+
+
+	<link rel="stylesheet" href="css/ebf19be.css" />
+
+	<link rel="stylesheet" href="css/4fe151e.css" type="text/css" />
+
+	<link rel="shortcut icon" type="image/png" href="favicon.png" />
+
+	<link href='https://fonts.googleapis.com/css?family=Neuton%7CSource+Sans+Pro:400,300' rel='stylesheet' type='text/css'>
+
+	<!-- Google Analytics Tracking Code -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-64832042-1', 'auto');
+		ga('send', 'pageview');
+
+	</script>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<nav class="navaffix navbar navbar-inverse" role="navigation">
+
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand logo" href="index.html">
+			<img class="img-responsive logo-menu" src="images/logoepidemiumblanc.png" alt="Epidemium"/>
+		</a>
+		<p class="navbar-text brand-text" style="display:none;" >Challenge 4 Cancer<br/><small>du 5 novembre 2016 au 5 mai 2017</small> </p>
+	</div>
+	<div class="collapse navbar-collapse"  collapse="navCollapsed">
+
+		<ul class="nav navbar-nav">
+			<li class="dropdown" dropdown>
+				<a href="#" ng-controller="DropdownCtrl" class="dropdown-toggle" dropdown-toggle>Season one<span class="caret"></span></a>
+				<ul class="dropdown-menu" dropdown-menu role="menu">
+					<li><a href="http://wiki.epidemium.cc/" target="blank">Wiki</a></li>
+					<li><a href="https://data.epidemium.cc/fr#" target="blank">Data</a></li>
+					<li><a href="http://review.epidemium.cc/" target="blank">Results</a></li>
+				</ul>
+			</li>
+			<li class="dropdown" dropdown>
+        <a href="#" ng-controller="DropdownCtrl" class="dropdown-toggle" dropdown-toggle>White paper<span class="caret"></span></a>
+        <ul class="dropdown-menu" dropdown-menu role="menu">
+            <li><a href="white-paper-fr.html">Français</a></li>
+            <li><a href="white-paper-en.html">English</a></li>
+        </ul>
+    	</li>
+		</ul>
+
+		<ul class="nav navbar-nav navbar-signinsignup navbar-right">
+			<li><a href="login/index.html"><span class="glyphicon glyphicon-log-in"></span> Se connecter</a></li>
+			<li><a href="register/index.html"><span class="glyphicon glyphicon-user"></span> S&#039;inscrire</a></li>
+		</ul>
+	</div>
+</nav>
+<div class="navplaceholder"></div>
+
+<!--<p>navCollapsed={{navCollapsed}}</p>-->
+
+<div class="banner banner-white-paper">
+
+	<div class="container">
+
+		<img class="img-responsive" style="padding: 10%;padding-top:15%;padding-bottom:8%;" src="images/epidemium.png" alt="Epidemium"/>
+
+	<div class="row text-center"><h3>White paper, review the program</h3></div>
+
+		<div class="titre-saison2"><h1 class="margin-bottom">Coming soon</h1></div>
+	</div>
+</div>
+
+<div class="container-newsletter">
+	<div class="container">
+
+		<div id="inscrivezvous" class="">
+			<!-- Begin MailChimp Signup Form -->
+			<div id="mc_embed_signup">
+				<form action="https://epidemium.us10.list-manage.com/subscribe/post?u=67976bdb5491f4305b4a24109&amp;id=9afa31ad6e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+					<div id="mc_embed_signup_scroll">
+
+						<div class="inputs-line">
+							<div class="little-title input">Stay up to date</div>
+							<input type="text" value="" name="FNAME" class="input" id="mce-FNAME" placeholder="first name">
+							<input type="text" value="" name="LNAME" class="input" id="mce-LNAME" placeholder="last name">
+							<input type="email" value="" name="EMAIL" class="required email input" id="mce-EMAIL" placeholder="email*">
+							<input type="submit" value="Send" name="subscribe" id="mc-embedded-subscribe" class="button input">
+						</div>
+
+						<div id="mce-responses" class="clear">
+							<div class="response" id="mce-error-response" style="display:none"></div>
+							<div class="response" id="mce-success-response" style="display:none"></div>
+						</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+						<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_67976bdb5491f4305b4a24109_9afa31ad6e" tabindex="-1" value=""></div>
+					</div>
+				</form>
+			</div>
+
+			<script type='text/javascript' src='http://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text'; /*
+		 * Translated default messages for the $ validation plugin.
+		 * Locale: FR
+		 */
+			$.extend($.validator.messages, {
+				required: "Ce champ est requis.",
+				remote: "Veuillez remplir ce champ pour continuer.",
+				email: "Veuillez entrer une adresse email valide.",
+				url: "Veuillez entrer une URL valide.",
+				date: "Veuillez entrer une date valide.",
+				dateISO: "Veuillez entrer une date valide (ISO).",
+				number: "Veuillez entrer un nombre valide.",
+				digits: "Veuillez entrer (seulement) une valeur numérique.",
+				creditcard: "Veuillez entrer un numéro de carte de crédit valide.",
+				equalTo: "Veuillez entrer une nouvelle fois la même valeur.",
+				accept: "Veuillez entrer une valeur avec une extension valide.",
+				maxlength: $.validator.format("Veuillez ne pas entrer plus de {0} caractères."),
+				minlength: $.validator.format("Veuillez entrer au moins {0} caractères."),
+				rangelength: $.validator.format("Veuillez entrer entre {0} et {1} caractères."),
+				range: $.validator.format("Veuillez entrer une valeur entre {0} et {1}."),
+				max: $.validator.format("Veuillez entrer une valeur inférieure ou égale à {0}."),
+				min: $.validator.format("Veuillez entrer une valeur supérieure ou égale à {0}.")
+			});}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+			<!--End mc_embed_signup-->
+		</div>
+	</div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+	<div class="container">
+
+		<div class="row">
+			<div class="col-sm-3">
+				<h3 style="color:#42D9B7;">Contact us</h3>
+				<ul>
+					<li><strong>Contact</strong> : <a href="mailto:contact@epidemium.cc">contact@epidemium.cc</a></li>
+					<li><strong>Data</strong> : <a href="mailto:data@epidemium.cc">data@epidemium.cc</a></li>
+					<li><strong>Wiki</strong> : <a href="mailto:wiki@epidemium.cc">wiki@epidemium.cc</a></li>
+					<li><strong>Ethical question</strong> : <a href="mailto:wiki@epidemium.cc">ethique@epidemium.cc</a></li>
+					<li><strong>Scientific question</strong> : <a href="mailto:wiki@epidemium.cc">methodologie@epidemium.cc</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-3">
+				<h3 style="color:#42D9B7;">Social</h3>
+				<ul>
+					<li><a href='https://www.facebook.com/epidemiumcc'>Facebook</a></li>
+					<li><a href='https://twitter.com/epidemium_cc'>Twitter</a></li>
+					<li><a href='https://www.meetup.com/fr/Epidemium'>Meetup</a></li>
+					<li><a href='https://plus.google.com/u/0/communities/114916320676400256400?cfem=1'>Google+</a></li>
+					<li><a href='https://www.youtube.com/channel/UCox7qtCL12TAzGf8xdRwN1A'>Youtube</a></li>
+					<li><a href='https://instagram.com/epidemium_cc'>Instagram</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-3">
+				<h3 style="color:#42D9B7;">Other</h3>
+				<ul>
+					<li><a href="#" target="_blank">Regulation (first season)</a></li>
+					<li><a href="wiki.epidemium.cc" target="_blank">Wiki</a></li>
+					<li><a href="#" target="_blank">OpenData</a></li>
+					<li><a href="#" target="_blank">Legal notices</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-3">
+				<h3 style="color:#42D9B7;">Press</h3>
+				<ul>
+					<li><a href="#">Download the last press release (french)</a></li>
+					<li>
+						<a class="item-image" href='https://recherche.cnam.fr/equipes/gba/epidemium-challenge4cancer-758165.kjsp'><img class="" src="bundles/tdoduser/images/bdb6b2f94921476891158644ce41f780_ucsusa.png" alt="Le cnam"></a>
+						<a class="item-image" href='http://www.industrie-techno.com/open-innovation-roche-s-associe-au-biohackerspace-la-paillasse.39105'><img src="bundles/tdoduser/images/1e4fe0c8583240fdb912d0ec61be4998_na70bp.png" alt="IT"></a>
+						<a class="item-image" href='https://www.itespresso.fr/roche-la-paillasse-mieux-cerner-cancer-big-data-101052.html'><img src="bundles/tdoduser/images/b7c3e5f9597a4809b464532abeae2c94_spqjhh.png" alt="IT"></a>
+						<a class="item-image" href='http://www.industrie.com/pharma/roche-s-associe-a-la-paillasse-pour-lancer-epidemium,65719'><img src="bundles/tdoduser/images/b40e555af8c24a62922c43aa69f3f4b9_x9xbe5.jpg" alt="IndustriePharma"></a>
+						<a class="item-image" href='http://www.echosciences-grenoble.fr/actualites/epidemium-lutter-contre-le-cancer-avec-le-big-data'><img src="bundles/tdoduser/images/9d1791f775d8492d83eded0cbb7077bf_tc6a6x.jpg" alt="Echoscience"></a>
+						<a class="item-image" href='http://biopharmanalyses.fr/special-therapie-genique-la-therapie-genique-va-trouver-sa-place-dans-larsenal-therapeutique/'><img src="bundles/tdoduser/images/deb0b28a1c6f4ed39c9a34a54faae8b3_ejqjhg.jpg" alt="Biopharm"></a>
+						<a class="item-image" href='https://www.maddyness.com/prospective/2015/08/26/openinno-roche/'><img src="bundles/tdoduser/images/d97d543e95d74dcf8f8b9cb9cf44442e_bpohrk.jpg" alt="Maddyness"></a>
+						<a class="item-image" href='http://sciencespourtous.univ-lyon1.fr/cedric-villani-scientifiques-doivent-reprendre-main-partage-connaissances/'><img src="bundles/tdoduser/images/ea09488fb6474baeb297fda936e68d44_ciqys1.png" alt="Sciences pour tous"></a>
+						<a class="item-image" href='http://www.capdigital.com/la-paillasse-partenariat-cap-digital-epidemium-epidemiologie-cancer/'><img src="bundles/tdoduser/images/56102a3e92304433b339809d6be521aa_pckl3m.jpg" alt="Cap Digital"></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<hr/>
+		<div class="row">
+			<div class="col-xs-4 col-sm-1 text-center" style="margin-top: 10px;">
+				<a href='http://lapaillasse.org/'><img class="img-responsive center-block" src="images/logo-paillasse.png" alt="La Paillasse"></a>
+			</div>
+			<div class="col-xs-4 col-sm-1 text-center" style="margin-top: 10px;">
+				<a href='http://www.club-jade.fr/'><img class="img-responsive center-block" src="images/logojade.png" style="height: 40px;" alt="Club Jade"></a>
+			</div>
+			<div class="col-xs-4 col-sm-1 text-center" style="margin-top: 10px;">
+				<a href='http://www.roche.fr/'><img class="img-responsive center-block" src="images/logo-roche80px.png" alt="Roche"></a>
+			</div>
+			<!--
+            <div class="col-sm-4 text-center" style="margin-top: 15px;">
+                <img class="img-responsive center-block" src="/images/epidemium_logo_transp_orange_48_fccxgx.png"></img>© 2016 Epidemium
+            </div>
+            -->
+		</div>
+	</div>
+
+
+
+	<script type="text/javascript" src="js/angular_1.4.8.min.js"></script>
+	<script type="text/javascript" src="js/ui-bootstrap-tpls-0.14.3.min.js"></script>
+	<script type="text/javascript" src="js/angular-animate-1.4.7.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/user.js"></script>
+	<script type="text/javascript" src="js/project.js"></script>
+	<script type="text/javascript" src="js/theme.js"></script>
+	<script type="text/javascript" src="js/config.js"></script>
+
+	<script src="js/textAngular-rangy.min.js"></script>
+	<script src="js/textAngular-sanitize.min.js"></script>
+	<script src="js/textAngular.min.js"></script>
+
+	<script src="js/ng-file-upload.min.js"></script>
+	<script src="js/ng-file-upload-shim.min.js"></script>
+	<script src="js/ng-img-crop.js"></script>
+
+
+</div>
+</body>
+</html>
+
+<!-- Localized -->

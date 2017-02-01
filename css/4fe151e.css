@@ -1,5 +1,5 @@
 /* Embed this font from Google Fonts at
-https://www.google.com/fonts/specimen/Roboto+Condensed */ 
+https://www.google.com/fonts/specimen/Roboto+Condensed */
 body {
 	/*font-family: "Roboto Condensed";*/
 	/* font-family: 'Neuton', serif; */
@@ -44,6 +44,10 @@ li {
 	/*font-family: 'Source Sans Pro', sans-serif;*/
 }
 
+.ta-hidden-input {
+	display: none;
+}
+
 .footer {
     /*text-align:center;*/
     padding:20px;
@@ -71,14 +75,23 @@ li {
     width: 60px;
 }
 
+.logo-menu {
+	width: 20px;
+	margin-top: 5px;
+}
+
 .banner{
 	width: 100%;
 	background-repeat:no-repeat;
 	background-size:cover;
-	background-color:#293787;	
+	background-color:#293787;
 	background-position:50% 50%;
 	margin-top: -12px;  /* cancel the navbar margin */
 	padding-bottom: 120px;
+}
+
+.banner-white-paper {
+	padding-bottom: 0px;
 }
 
 @media only screen and (max-width : 1024px) {
@@ -147,8 +160,8 @@ li {
 	margin-top: -10px;  /* cancel the navbar margin */
 }
 
-hr.fancy-line { 
-    border: 0; 
+hr.fancy-line {
+    border: 0;
     height: 1px;
     position: relative;
     margin: 4em 0; /* Keep other elements away from pseudo elements*/
@@ -233,7 +246,7 @@ body, hr.fancy-line:after {
 	height: 200px;
 	background-position-y: 20%;
 }
- 
+
 .projectcard-text {
   height: 330px;
   position: relative;
@@ -251,13 +264,13 @@ body, hr.fancy-line:after {
     color: #337AB7;
     font-weight: bold;
 }
-.blur { 
-  position: absolute; 
-  bottom: 0; 
+.blur {
+  position: absolute;
+  bottom: 0;
   left: 0;
-  width: 100%; 
-  margin: 0; padding: 30px 0; 
-	
+  width: 100%;
+  margin: 0; padding: 30px 0;
+
   /* "transparent" only works here because == rgba(0,0,0,0) */
   background-image: linear-gradient(to bottom, transparent, white);
 }
@@ -348,11 +361,11 @@ body, hr.fancy-line:after {
 .container .nous-rejoindre > li > a {
     color: #FFFFFF;
 	text-transform: uppercase;
-	
+
 }
 
-.navbar-inverse .navbar-nav > .open > a, 
-.navbar-inverse .navbar-nav > .open > a:hover, 
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
 .navbar-inverse .navbar-nav > .open > a:focus {
     color: #FFF;
     background-color: #ffcd00;
@@ -504,7 +517,7 @@ img .responsive {
 	padding:13px;
 	background-color:#ffcd00;
 }
- 
+
 .nous-contacter {
 	margin-left:44%;
     margin-top: 28px;
