@@ -44,6 +44,11 @@ li {
 	/*font-family: 'Source Sans Pro', sans-serif;*/
 }
 
+.call-to-action {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
 .ta-hidden-input {
 	display: none;
 }
@@ -92,6 +97,17 @@ li {
 
 .banner-white-paper {
 	padding-bottom: 60px;
+}
+
+.committes-text-right {
+	border-right-style: solid;
+	border-width: thin;
+}
+
+@media only screen and (max-width : 425px) {
+	.committes-text-right {
+		border: none;
+	}
 }
 
 @media only screen and (max-width : 1024px) {
