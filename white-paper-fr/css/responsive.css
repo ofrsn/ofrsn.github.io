@@ -1,0 +1,473 @@
+@media screen and (max-width: 1860px) {
+ /*
+	*	0. RESET
+	*/
+
+
+	/*
+	*	1. OUTILS
+	*/
+	
+
+	
+		
+	/*
+	*	2. TYPOGRAPHIE
+	*/
+	
+
+	
+	/*
+	*	3. COUVERTURE
+	*/
+	
+
+	/*
+	*	4. SOMMAIRE
+	*/
+
+	
+	/*
+	*	5. PREFACE
+	*/
+	
+		
+	/*
+	*	6. AVANT-PROPOS
+	*/
+
+
+	/*
+	*	7. INTRODUCTION
+	*/
+
+	
+
+	/*
+	*	8. PARTIES
+	*/
+	
+	
+		.partie .entete .info					{ width : 40%; height : 90%; padding : 5%; }
+
+		
+	
+	/*
+	*	9. CONCLUSION
+	*/
+		
+		
+	
+	/*
+	*	10. AUTEURS
+	*/
+
+	
+	/*
+	*	11. REMERCIEMENTS
+	*/
+		
+		
+	/*
+	*	12. CREDITS
+	*/
+		
+		
+	/*
+	*	13. SUIVEZ-NOUS
+	*/
+	
+	
+}
+
+
+
+@media screen and (max-width: 1450px) {
+ /*
+	*	0. RESET
+	*/
+
+
+	/*
+	*	1. OUTILS
+	*/
+	
+
+	
+		
+	/*
+	*	2. TYPOGRAPHIE
+	*/
+	
+
+	
+	/*
+	*	3. COUVERTURE
+	*/
+	
+
+	/*
+	*	4. SOMMAIRE
+	*/
+
+	
+	/*
+	*	5. PREFACE
+	*/
+	
+		
+	/*
+	*	6. AVANT-PROPOS
+	*/
+
+
+	/*
+	*	7. INTRODUCTION
+	*/
+
+	
+
+	/*
+	*	8. PARTIES
+	*/
+	
+	
+		.partie .chiffre_partie					{ font-size : 170px; }
+		.partie .chiffre_partie:before			{ font-size : 99px; left : -29px; top : 28px;}
+
+		
+	
+	/*
+	*	9. CONCLUSION
+	*/
+		
+		
+	
+	/*
+	*	10. AUTEURS
+	*/
+
+	
+	/*
+	*	11. REMERCIEMENTS
+	*/
+		
+		
+	/*
+	*	12. CREDITS
+	*/
+		
+		
+	/*
+	*	13. SUIVEZ-NOUS
+	*/
+	
+	
+}
+
+
+@media screen and (max-width: 1280px), screen and (max-height: 620px) {
+
+	/*
+	*	8. PARTIES
+	*/
+	
+	
+		.partie .chiffre_partie					{ font-size : 150px; }
+		.partie .chiffre_partie:before			{ font-size : 80px; left : -22px; top : 28px;}
+		.partie h3								{ font-size : 18px; margin-top : 0;}
+		.partie .resume,
+		.partie .auteurs						{ font-style: italic; font-size: 16px; line-height: 20px; }		
+	
+	
+}
+
+@media screen and (max-height: 850px) {
+	#sommaire {padding : 5vh; height : 90vh; }
+	.sommaire							{ height : 100%;}
+		.sommaire > h3						{ margin : 20px;}
+		.sommaire .sommaire_entree_contain	{ height : auto; display :  flex; }
+		.sommaire .sommaire_entree			{ margin : 0 20px; position : static; }
+		.sommaire .sommaire_entree h3		{ font-size : 14px; }
+		.sommaire .sommaire_entree .titre	{ width : 100%; }
+		.sommaire .telecharger				{ margin : 0; padding : 0 20px;}
+		.sommaire .telecharger	.puce		{ display : none;}
+		
+}
+
+@media screen and (max-height: 730px) {
+	#sommaire {padding : 0; height : auto; }
+}
+
+
+@media screen and (max-width: 800px) {
+			
+		.partie .partie_item_contain			{ flex-direction : column; }	
+		.partie .partie_item_contain .illustration		{ display : none; }	
+		.partie .partie_item_contain .partie_item { height : auto; }	
+		
+		.embedly-card  .txt-bd .description,
+		.embedly-card .art-bd				{display : none;}
+}
+
+
+
+@media screen and (max-height: 625px) {
+	.partie h3.titre_carousel		{display : none;}
+}
+
+@media screen and (max-height: 555px) {
+	.sommaire .sommaire_entree .auteur		{display : none;}
+}
+
+@media screen and (max-width: 768px) {
+ /*
+	*	0. RESET
+	*/
+
+
+	/*
+	*	1. OUTILS
+	*/
+	
+
+	
+		
+	/*
+	*	2. TYPOGRAPHIE
+	*/
+	
+
+	
+	/*
+	*	3. COUVERTURE
+	*/
+	
+
+	/*
+	*	4. SOMMAIRE
+	*/
+
+	
+	/*
+	*	5. PREFACE
+	*/
+	
+		
+	/*
+	*	6. AVANT-PROPOS
+	*/
+
+
+	/*
+	*	7. INTRODUCTION
+	*/
+
+	
+
+	/*
+	*	8. PARTIES
+	*/
+	
+		.partie								{ height : auto; background-image : none;}
+		.partie .entete						{ flex-direction : column; }	
+		.partie .entete .info,
+		.partie .entete .illustration		{ width : auto; height : auto;}
+		.partie .entete .illustration		{ height : 50vh; margin-top : 40px;}
+		.partie .entete .illustration img	{ width : 100%; height : auto; }
+
+		.annexes.partie .info .titre		{ font-size : 80px; }
+	
+	/*
+	*	9. CONCLUSION
+	*/
+		
+		
+	
+	/*
+	*	10. AUTEURS
+	*/
+
+	
+	/*
+	*	11. REMERCIEMENTS
+	*/
+		
+		
+	/*
+	*	12. CREDITS
+	*/
+		
+		
+	/*
+	*	13. SUIVEZ-NOUS
+	*/
+	
+	
+}
+
+
+@media screen and (min-width: 600px) {
+		#sommaire.minimise												{ position : fixed; padding : 0; left : 0; top : 0 ;height : 100vh; width : 53px; background-color : #d6d5d5; z-index : 9999; }
+		#sommaire.minimise	.titre_primaire								{ margin : 0 auto; position : relative; width : 22px; overflow : hidden; height : 50px;}
+		#sommaire.minimise	.titre_primaire:before						{ width : 100%; display : none;}
+		#sommaire.minimise	.titre_primaire:after						{ content:"S"; position : absolute; left : 0; top : 0;}
+		#sommaire.minimise .sommaire 									{ padding-top : 0; border-top : solid 4px #f36d30;}
+		#sommaire.minimise .sommaire .sommaire_entree_contain			{ height : auto; position : absolute; bottom : 0; }
+		#sommaire.minimise .sommaire .sommaire_entree					{ margin : 0;  width : 53px; height : 53px; flex-grow : 0; overflow : hidden;}
+		#sommaire.minimise .sommaire .sommaire_entree:hover				{ width : 450px; border : none; }
+		#sommaire.minimise .sommaire .sommaire_entree:hover	.titre		{ display : flex; }
+		#sommaire.minimise .sommaire .sommaire_entree:hover				{ background-color : #273895; color : white;}
+		#sommaire.minimise .sommaire .sommaire_entree:hover	.page		{ color : white;}
+		#sommaire.minimise .sommaire .sommaire_entree .titre 			{ order : 1; padding-left : 20px; display : none;}
+		#sommaire.minimise .sommaire .sommaire_entree .page 			{ width : 53px; text-align : center; }
+		#sommaire.minimise .sommaire .telecharger 						{ padding : 0;}
+		#sommaire.minimise .sommaire .telecharger:hover					{ background-color : #f36d30;}
+		#sommaire.minimise .sommaire .sommaire_entree .puce 			{ display : none;}
+}
+
+@media screen and (max-width: 600px) {
+ /*
+	*	0. RESET
+	*/
+
+		
+	body 				{ width: 100vw; } 
+
+	/*
+	*	1. OUTILS
+	*/
+	
+	.illu				{width : 100%; height : auto; }
+	.section			{ flex-direction : column; display : block; }
+	.colonne_40,
+	.colonne_60			{ width : auto; padding : 0 20px; position : relative; height : 40vh;}
+	.colonne_40			{ height : 30vh;}
+	
+	.colonne_60 .contenu {height : 50vh;}
+	
+	.section .fond		{ width : auto; height : auto; }
+	.section .bloc_titre { position : static; margin : 30px 0 0 0;}
+	.section .bloc_titre h3,
+	.section .bloc_titre h4 { margin-left : 0;}
+	
+	.contenu			{ margin-top : 20px;}
+	.contenu blockquote,			
+	.contenu blockquote.droite 	{ float : none;  margin : 20px auto; width : 80%;}
+	
+
+	
+		
+	/*
+	*	2. TYPOGRAPHIE
+	*/
+	
+	.titre_primaire		{ font-size : 30px; line-height: 32px; }
+	.titre_primaire::before	{ width : 30px; top : -5px; }
+	.section .titre_secondaire {font-size : 20px; line-height : 25px;}
+	
+
+	
+	/*
+	*	3. COUVERTURE
+	*/
+		
+		.couverture a { margin : 0 30px; }
+		.couverture .picto			{width : 100px; margin-bottom : -20px;}
+		.couverture .picto img		{width : 100%; height : auto;}
+		.couverture h2				{ font-size : 34px; }
+		.couverture .features       {    font-size: 11px; }
+
+	/*
+	*	4. SOMMAIRE
+	*/
+		.sommaire .sommaire_entree .page    { display : none; }
+		
+		#sommaire.minimise												{ position : fixed; padding : 0; left : 0; top : 0 ;height : 100vh; width : 100vw; background-color : #d6d5d5; z-index : 9999; }
+		#sommaire.minimise .sommaire .sommaire_entree_contain 			{ height : 100%; }
+		#sommaire.minimise.close .sommaire .sommaire_entree_contain 	{ display : none; }
+		#sommaire.minimise .sommaire .sommaire_entree					{ flex-grow : 1; min-height : 0;}
+		#sommaire.minimise.close										{ height : 56px; overflow : hidden; }
+		#sommaire.minimise .titre_primaire								{ margin : 10px 20px 30px; }
+		#sommaire.minimise.close .titre_primaire						{ margin : 10px 20px 30px; }
+		#sommaire.minimise .titre_primaire:before,
+		#sommaire.minimise.close .titre_primaire:before					{ display : none; }
+		#sommaire.minimise .titre_primaire:after						{ content: "\f039"; cursor :pointer; font-family: FontAwesome; font-weight: normal; font-style: normal; display: inline-block; text-decoration: inherit; position: absolute; right: -5px; top: 0px; font-size: 20px;} 
+		#sommaire.minimise .titre_primaire:hover:after  				{ color :#f36d30;} 
+		
+	
+	/*
+	*	5. PREFACE
+	*/
+	
+		
+	/*
+	*	6. AVANT-PROPOS
+	*/
+
+
+	/*
+	*	7. INTRODUCTION
+	*/
+
+	
+
+	/*
+	*	8. PARTIES
+	*/
+	
+		.partie								{ height : auto; background-image : none;}
+		.partie .entete						{ flex-direction : column; background-image : none; }
+		.partie .chiffre_partie				{ display :none; }
+		.partie .info h3					{ margin-bottom : 4px; margin-top : 10px;}
+		.partie .entete .info				{ width : auto; height : auto; margin-left : 0;}
+		.partie .entete .illustration		{ width : 100vw; height : 100vh; position : absolute; background-color :transparent; left : 0; top : 0; background-image : none;}
+		.partie .entete .illustration img	{ display : none;}
+		.partie .illustration .calque		{ display : none; }
+		.partie .illustration .consulter	{ display : none; }
+		.annexes.partie .info .titre		{ font-size : 80px; }
+		.partie.annexes .info h3			{ margin-top : 30px; margin-bottom : 51px;}
+		.partie.annexes .illustration .consulter { display : block; }
+		
+		.titre_carousel						{ left : 20px; }
+		.next, .previous					{ top : auto; bottom : 10px; width : 50px; height : 50px; background-size : cover; }
+		.previous							{ left : 0;}
+		
+	
+	/*
+	*	9. CONCLUSION
+	*/
+		
+		
+	
+	/*
+	*	10. AUTEURS
+	*/
+		.liste_auteurs						{ padding : 20px; width : auto; border-top : solid 1px #243387;}
+		.auteurs_liste_contain				{ flex-direction : column; }
+		.auteurs_contain					{ width : auto; }
+	
+	/*
+	*	11. REMERCIEMENTS
+	*/
+		
+		.remerciements					{ padding : 20px; }
+		.remerciements .titre_primaire	{ margin-top :10px;}
+	/*
+	*	12. CREDITS
+	*/
+		
+		.credits					{ flex-direction : column; }
+		.credits .coordination,
+		.credits .credits_contenu			{ width : auto; margin : 0;}
+		.credits .coordination		{ margin-bottom : 30px;}
+	/*
+	*	13. SUIVEZ-NOUS
+	*/
+	
+		footer						{ flex-direction : column; }
+		footer .titre_primaire		{ margin-bottom : 10px;}
+		footer .reseaux			{font-size : 45px; }
+	
+	
+}

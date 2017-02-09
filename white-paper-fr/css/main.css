@@ -1,0 +1,498 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+	/*
+	*	0. RESET
+	*/
+
+		body, html						{ margin : 0; min-height : 100%; font-family: 'Source Sans Pro', sans-serif; font-size :14px; }
+		p,ul 							{ margin : 0; padding : 0; }
+
+
+
+	/*
+	*	1. OUTILS
+	*/
+
+		.section					{ display : flex; flex-direction : row; width : 100%; position :relative; min-height : 100vh;}
+		.section h3,
+		.section h4					{ /*max-width : 265px;*/ max-width : 300px; margin : 0 auto; position : relative;}
+		.colonne_40 .titre_primaire	{ margin-bottom : 15px;}
+		.section .bloc_titre		{ top : 50%; margin-top : -50px; position :absolute; }
+
+		.colonne_40					{ width : 40%; padding-left : 10%; position : relative; height : 100vh;}
+		.colonne_60					{ width : 60%; position : relative; padding : 15vh 10vh 15vh 0; height : 70vh; }
+
+		.section .fond				{ width : 40%; height : 100%; position : absolute; left : 0; top : 0; opacity : 0.15;}
+		.section .fond img			{ width : 100%; height : auto;}
+
+		.contenu					{ height : 100%; margin : 0 0 25px;}
+		.contenu ul					{ padding : 10px 30px;}
+
+		.liresuite					{ height : 20px; width: 100%; text-align : right; font-size : 21px; color : #f36d35; border-top : solid 1px #d6d5d5; height : 60px; line-height : 60px; position : relative; cursor : pointer;}
+		.liresuite:before			{ content:'+'; position : absolute; left : 10px; font-size : 36px; font-weight : 200;}
+
+		.contenu blockquote					{ color : #273895; width : 160px; float : left; margin-left : -50px;}
+		.contenu blockquote:before			{ content:""; width : 27px; height : 21px; background-image: url('../img/citation.svg'); display : block; float : left; margin-right : 5px; margin-top : 5px;}
+		.contenu blockquote .auteur			{ font-size : 14px; font-weight : 700; margin-top : 20px; font-style : normal;}
+		.contenu blockquote.droite			{ float : right; margin-left : 0; margin-right : -50px; margin-left : 20px;}
+		
+		.cacher						{display : none;}
+
+
+
+
+	/*
+	*	2. TYPOGRAPHIE
+	*/
+
+		h3							{ font-family :  "Neuton", serif; font-size : 48px; font-weight : 700; position : relative; line-height : 35px;}
+		.titre_primaire:before		{ content : ""; width : 45px; height : 4px; background-color : #f36d30; display : block; position : absolute; left : 0; top : -15px;}
+		.section .titre_secondaire  { color : #273895; font-size : 30px; max-width : 370px; text-align : center; padding-bottom : 35px; position :relative; margin-bottom : 50px;}
+		.section .titre_secondaire:after { content:""; height : 1px; width : 100px; background-color :black; position : absolute; bottom : 0;left : 50%; margin-left : -50px;}
+
+		.partie h3					{ font-size : 30px; }
+		.partie .resume,
+		.partie .auteurs 			{ font-family : "Neuton", serif; font-style : italic; font-size : 18px; line-height : 25px;}
+
+		.auteur						{ font-style : italic; font-size : 14px; font-weight : 400; margin-top : 0px; margin-bottom : 2px;}
+		.texte_orange				{ color : #f36d35; }
+		.lettrine					{ font-size : 80px; color : #273895; float : left; line-height : 58px; padding-right : 5px; text-indent : -5px;}
+
+
+	/*
+	*	3. COUVERTURE
+	*/
+
+		.couverture					{ background-color : #273895; width :100%; height :100vh; text-align :center; color :white; display : flex; display : -webkit-flex; align-items: center; justify-content: center; position : relative;}
+		.couverture a				{ color : white; text-decoration : none; display : block;}
+		.couverture .vers_sommaire	{ width : 100%;}
+		.couverture h1				{ max-width : 610px; margin : 0 auto; border-top : solid 1px white;  border-bottom : solid 1px white; padding : 30px 0;}
+		.couverture h1 img			{ width : 100%; height : auto;}
+		.couverture .picto			{ max-width : 135px; background-color : #273895; margin : -13px auto 60px;}
+		.couverture h2				{ font-family : "Neuton", serif; font-size : 44px; font-weight : 400; text-transform : uppercase; margin-bottom : 0; letter-spacing : 2px;}
+		.couverture .features		{ font-size : 14px;}
+		.couverture .features span	{ margin : 0 5px; }
+		.couverture .descendre		{ opacity : 0.3; height : 51px; width : 30px;  -ms-transform: rotate(90deg); /* IE 9 */ -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */ transform: rotate(90deg); position : absolute; bottom : 20px; left : 50%; margin-left : -15px;}
+		.couverture .descendre:hover  { opacity : 1;}
+		.couverture .descendre img  { height : 100%; width : auto;}
+		.retour						{ background-image : url(../img/logoepidemiumblanc.png); height : 50px; opacity : 0.5; width : auto; padding-left : 40px;line-height : 50px; background-repeat : no-repeat; background-position : left center; position : absolute; left : 20px; top :20px; display : block; }
+		.retour:hover						{opacity : 1;}
+
+	/*
+	*	4. SOMMAIRE
+	*/
+		#sommaire								{ padding : 10vh; height : 80vh; }
+		.sommaire 								{ background-color : #d6d5d5; width : 100%; padding-top : 1px; height : 100%; position : relative; display : flex; flex-direction : column;  }
+		.sommaire a								{ color : inherit; text-decoration : none; }
+		.sommaire .titre_primaire				{ margin-top : 50px; margin-left : 50px;}
+		.sommaire .sommaire_entree_contain		{ list-style : none; margin-left : 0; padding : 0; display : flex; flex-direction : column; justify-content : center; height : 100%; overflow : visible; position :static; }
+		.sommaire .sommaire_entree				{ border-bottom : solid 1px #c0bfbf; margin : 0 50px; flex-grow : 1; min-height : 50px; position : relative; display :block; width: auto;  display: flex; flex-direction: row;}
+		.sommaire .sommaire_entree a			{ display : block; width :100%;  display: flex;}
+		.sommaire .sommaire_entree .titre		{ width : 90%; display : flex; display : -webkit-flex; flex-direction : column; flex-direction : -webkit-column;  justify-content: center;}
+		.sommaire .sommaire_entree h3:before	{ display : none; }
+		.sommaire .sommaire_entree h3			{ font-size : 18px; margin : 0;}
+		.sommaire .sommaire_entree .auteur		{ margin : -7px 0 10px 0;}
+		.sommaire .sommaire_entree .page 		{ font-size : 18px; text-align : right; width: 10%; font-family : "Neuton", serif; color : #b3b2b2; font-weight : 700; display : flex; display : -webkit-flex; flex-direction : column; flex-direction : -webkit-column;  justify-content: center;}
+		.sommaire .telecharger					{ background-color : #f36d35; color : white; margin : -1px 0 0 0 ; padding :0px 50px;}
+		.sommaire .telecharger .puce			{ width: 10px; height : 10px; background-color : white; border-radius : 5px; position : absolute; top :50%; left : 25px; margin-top : -5px;}
+		.sommaire .telecharger .titre			{ line-height : 54px; }
+		.sommaire .telecharger .page 			{ color : white;}
+		
+		
+
+
+	/*
+	*	5. PREFACE
+	*/
+
+
+		.preface .colonne_40					{ }
+		.illu-1									{ height : 370px; width : auto; float : left; }
+
+	/*
+	*	6. AVANT-PROPOS
+	*/
+
+		.avantpropos							{ background-color : #f5f5f5; }
+		.illu-2									{ height : auto; width : 100%; display : block;}
+
+
+	/*
+	*	7. INTRODUCTION
+	*/
+
+		.illu-3									{ height : auto; width : 100%; display : block;}
+
+
+	/*
+	*	8. PARTIES
+	*/
+
+
+		.partie									{ width :100%; height : 100vh; overflow : hidden; background-color : #3f4c9d; position : relative; }
+		.partie .partie_item_contain			{ width : 100%; height : 100%; display : flex; display : -webkit-flex; position: relative;}
+		.partie .partie_item					{ width : 100vw; height : 100vh; display :block; position : relative; display : flex; align-items : center; }
+		.partie .entete							{ display : flex; display : -webkit-flex;  flex-direction : row;  position : relative; height : 100%; background-image : url('../img/fond.png'); background-repeat : repeat-x;}
+		.partie .entete .info					{ width : 30%; height : 80%; padding : 10%; margin-left : 50px;position : relative; display : block; color : white; display : flex; display : -webkit-flex; flex-direction : column; flex-direction : -webkit-column; justify-content : center;}
+		.partie .entete .illustration			{ width : 50%; height : 100%; background-color : white; position : relative; display : block; display : flex; display : -webkit-flex; flex-direction : column; flex-direction : -webkit-column; justify-content : center; overflow : hidden;}
+		.partie .chiffre_partie					{ margin : 0 auto; font-size : 250px; width : 120px; position : relative; z-index : 1;}
+		.partie .chiffre_partie:before			{ content:"#"; font-size : 150px; position : absolute; top : 28px; left : -30px; color : #6871ae; z-index : -1;}
+		.partie .entete .resume					{ margin-bottom : 50px; }
+		.partie .auteurs_titre					{ font-size : 18px; font-family : "Neuton", serif; text-transform : uppercase; font-weight : 700; background-color : #3f4c9d; position : relative; width : 100px;margin-top : -30px; top : 6px; /*margin-top : -19px;*/ padding-right :10px;}
+		.partie .auteurs						{ border-top : solid 1px white; border-bottom : solid 1px white; padding : 10px 0 15px;}
+		.partie .illustration					{ position : relative; cursor : pointer; background-size : cover;}
+		.partie .illustration:hover .calque,
+		.partie .illustration:hover .consulter	{ display : none;}
+		.partie .illustration img				{ width : auto; height :100%; display : block; display : none;}
+		.partie .illustration .calque			{ background-color : #3f4c9d; width : 100%; height :100%; position : absolute; left : 0; top : 0; opacity : 0.85; }
+		.partie .illustration .consulter		{ position : absolute; top : 50%; left : 50%; color :white; margin-left : -79px; margin-top : -98px;}
+		.partie .illustration .consulter .fleche { width : 72px; height : 140px; background-image : url('../img/fleche.svg'); background-repeat : no-repeat; background-size : contain; text-indent : -9999px; margin : 0 auto 20px;}
+		.partie .illustration .consulter .texte { text-transform : uppercase; border-bottom : solid 2px white; font-weight : 700; padding-bottom : 5px;}
+		.annexes.partie .info .titre			{ font-size : 100px; font-family : "Neuton", serif; }
+		.annexes.partie .illustration			{ background-color : transparent; }
+		.annexes.partie .illustration .calque	{ display : none; }
+		.annexes.partie .illustration:hover .consulter	{ display : block; }
+		.partie .embedly-card					{ max-width : 600px; max-height : 517px; margin : 0 auto; position : relative;}
+		.partie .pagination         			{ position: absolute; bottom : 20px; display:  flex; flex-direction: row; justify-content: center; width : 100%;}
+		.partie .pagination li      			{ width : 10px; height : 10px; cursor : pointer; background-color: white; margin-right: 10px; list-style : none; text-indent: -9999px; border-radius: 10px;}
+		.partie .pagination li.actif 			{background-color: #f36d35;} 
+		
+		.partie_1 .illustration					{ background-image : url('../img/communaute-ressources-BG.jpg');}
+		.partie_2 .illustration					{ background-image : url('../img/big-data-cancer.jpg');}
+		.partie_3 .illustration					{ background-image : url('../img/cadre-juridique-BG.jpg');}
+
+		.embedly-card							{background-color : white; padding : 0 20px 10px;}
+		.embedly-card .embd-pinterest			{display : none;}
+		/*.partie_item:not(.entete)				{ display : none;}*/
+
+		.next,
+		.previous								{ position : absolute; background-image : url("../img/cartouche-d.png"); background-repeat : no-repeat; background-position : left top;  right : 0; top : 50%; width : 105px; height : 100px; cursor : pointer; opacity : 0.5;}
+		.previous								{ right : none; left : 50px;  background-image : url("../img/cartouche-g.png"); background-position : right top;}
+		.next:hover,
+		.previous:hover							{ opacity : 1;}
+		
+		.titre_carousel							{ color :white; position : absolute; top : 0; left : 90px; margin-top : 10px; text-transform : uppercase;}
+
+	/*
+	*	9. CONCLUSION
+	*/
+
+		.illu-4									{ margin : 30px 0; height : auto; width : 100%; display : block;}
+
+
+	/*
+	*	10. AUTEURS
+	*/
+
+		.liste_auteurs							{ background-color : #3f4c9d; padding : 10%; color : white; width : 80%;}
+		.liste_auteurs h3						{ margin-top : 0; }
+		.auteurs_liste_contain					{ display : flex; display : -webkit-flex; flex-direction : row; }
+		.auteurs_contain						{ list-style : none; width : 50%;}
+		.auteurs_contain .auteur				{ cursor : help;}
+		.auteurs_contain .auteur .nom			{ font-style : 14px; font-style : normal; font-weight : 700;}
+		.auteurs_contain .auteur .nom:before	{ content:"//"; color : #f36d35; margin-right : 4px;}
+		.auteurs_contain .auteur .nom .fonction { font-style : 12px; font-style : italic; font-weight : 200;}
+		.auteurs_contain .auteur .bio           { font-style : 12px; font-style : normal; font-weight : 200; border-top : solid 1px #6570b1; margin : 12px; padding-top : 12px; display : none;}
+
+	/*
+	*	11. REMERCIEMENTS
+	*/
+
+		.remerciements							{ padding : 10%; }
+		.remerciements h4						{ font-size : 21px; font-family : "Neuton", serif; margin-bottom : 5px;}
+		.remerciements p						{ font-size : 12px;}
+
+	/*
+	*	12. CREDITS
+	*/
+		.credits								{ background-color : #f5f5f5; padding : 10%; display : flex; display : -webkit-flex; flex-direction : row; justify-content :center;}
+		.credits .titre_primaire				{ font-size : 30px;}
+		.credits .titre_primaire:before			{ width : 43px; height : 4px; top : -9px;}
+		.credits .coordination					{ width : 50%; border-top : solid 1px black; border-bottom : solid 1px black; margin-right : 100px; max-width : 400px; font-size : 16px;}
+		.credits .coordination .logos			{ border-top : solid 1px black; margin-top : 40px; padding : 20px 0 20px; list-style : none; display : flex; display : -webkit-flex; flex-direction : row;}
+		.credits .coordination .logos .logo		{ width : 33.33%; text-align :center; align-items: center; display : flex; display : -webkit-flex; justify-content :center;}
+		.credits .coordination .logos .logo	img	{ width : 100%; height : auto; max-width : 110px;}
+		.credits .credits_contenu				{ width : 50%; max-width : 400px;}
+		.credits .creativecommons				{ max-width : 110px; height : auto; width : 100%; margin-top : 30px;}
+
+	/*
+	*	13. SUIVEZ-NOUS
+	*/
+
+		footer									{ background-color : #3f4c9d; padding : 5% 10%; color : white; width : 80%; display : flex; display : -webkit-flex; flex-direction : row;}
+		footer .titre_primaire					{ width : 50%;}
+		footer .reseaux							{ list-style : none; font-size : 100px; display : flex; display : -webkit-flex; align-items :center;}
+		footer a								{ color : white; display : block; width :100%; height : 100%;}
+		footer a:hover							{ color : #f36d30;}
+		footer .reseaux	.item:not(:last-child)	{ margin-right : 30px;}
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
