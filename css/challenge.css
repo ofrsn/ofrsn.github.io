@@ -1,0 +1,78 @@
+.challenge .header-body-bottom{
+	padding-top: 10px;
+}
+.challenge .header-body-bottom-content h1{
+	color: #fff;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+.challenge .header-body-bottom-content p{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+.challenge .body-values h1{
+	font-weight: 800;
+    color: #42d9b7;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.content-bottom .tab-content{
+	border: 1px solid #e8e8e8;
+    float: left;
+    width: 100%;
+    border-top: 0;
+    padding: 40px 10px;
+}
+.content-bottom .nav-tabs>li> a{
+    margin-right: 20px;
+    line-height: 1.42857143;
+    border-radius: 4px 4px 0 0;
+    background: #f5f5f5;
+    border: 1px solid #e8e8e8;
+    min-width: 220px;
+    text-align: center;
+    color: #4a4a4a;
+    font-size: 16px;
+    padding: 16px;
+}
+.content-bottom .nav-tabs .active a{
+	background: #fff;
+	border-bottom-color:transparent !important;
+}
+.content-bottom .tab-content span {
+    color: #3848a0;
+    margin-bottom: 1px;
+    display: block;
+}
+.content-bottom .tab-content span,.content-bottom .tab-content p{
+	font-size: 17px;
+    font-weight: 200;
+}
+.content-bottom{
+	padding: 0 50px;
+    margin-top: 50px;
+}
+.challenge .content-bottom .nav-tabs a{
+	font-weight: bold;
+    font-size: 19px;
+}
+.challenge .challenge-join{
+	padding: 60px;
+    clear: both;
+    margin-bottom: 20px;
+}
+.challenge .content-bottom .tab-content span{
+	    font-weight: 600;
+	    margin-bottom: 20px;
+}
+.challenge span#downarrow{
+	display: inline-block;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.tab-content h3{
+    line-height: 1.3;
+}

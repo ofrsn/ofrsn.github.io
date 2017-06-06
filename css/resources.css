@@ -1,0 +1,102 @@
+
+/* resources page */
+
+.resources .content-block{
+	text-align: center;
+}
+.resources .content-block h1 {
+    color: #ff681f;
+}
+.resources .header-body-bottom-blocks .block-img{
+	padding: 30px;
+    margin-top: 30px;
+}
+.body-values-resources p {
+    font-size: 16px;
+    color: #3848a0;
+    font-weight: 600;
+}
+.body-values-resources.body-values .body-bloks{
+	margin-top: 140px;
+}
+.body-values-resources .body-block-item {
+    padding: 20px 0px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    text-align: center;
+    margin: 0 30px;
+    background: #fff;
+
+}
+.body-values-resources .body-blok-item-content {
+    margin-bottom: 30px;
+}
+.body-values-resources .body-block-item h3{
+	color: #ff681f;
+}
+.body-values-resources .body-block-item p{
+	font-size: 16px;
+	font-weight: 500;
+	padding: 0 30px;
+}
+.body-values-resources .body-block-item .btn-epidemium{
+	font-size: 16px;
+}
+.resources-community h1,.resources-community p{
+	color: #3848a0;
+}
+.resources-community h1{
+	margin-bottom: 20px;
+}
+.resources-community p{
+	font-size: 16px;
+	font-weight: 600;
+}
+.resources-community h2{
+	color: #42d9b7;
+	min-height: 100px;
+	text-align: center;
+}
+.resources-community-div.blocks {
+    margin-top: 70px;
+}
+.resources-community-block-item {
+    padding: 0 50px;
+    text-align: left;
+}
+.resources-community-img {
+    padding: 0 30px;
+}
+.resources .footer-content h1:after{
+	height: 4px;
+    background: #e7e7e7;
+}
+.resources .footer-content {
+    background: #fbfbfb;
+}
+.resources .footer-content * {
+    color: #3847a0;
+}
+.resources .footer-content-social a {
+    display: inline-block;
+}
+.resources .footer-content-social a img {
+    border-right: 1px solid #e7e7e7;
+    padding: 0 15px;
+}
+.resources .footer-content-social a:last-child img{
+	border: 0;
+}
+.resouerces-path{
+    background: url(../images/path.png) no-repeat;
+    height: 100%;
+    position: absolute;
+    top: 170px;
+    z-index: 0;
+    left: 260px;
+    width: 70%;
+}
+section.body-values.body-values-resources{
+    position: relative;
+}

@@ -1,0 +1,289 @@
+@media screen and (max-width: 1024px) {
+    .first-menu .navbar-brand{
+    	margin-right: 48px;
+    }
+    #menu-epidemium input.form-control{
+    	width: 410px;	
+    }
+    .body-values{
+    	padding-left: 0;
+    	padding-right: 0;
+    }
+	
+	/* page home */
+	.home .body-blok-item-content{
+		padding-right: 0;
+	}
+	.home .body-block-item img{
+		margin-bottom: 15px;
+	}
+	.body-committees-content ul{
+		margin-right: 40px;
+	}
+	.body-book-content {
+        margin-bottom: 30px;
+    }
+    /*Page how-it-work*/
+	.how-it-work .header-top-bottom,.how-it-work .header-body-bottom,.home .header-top-bottom,.home .header-body-bottom{
+    	padding-right: 0;
+    	padding-left: 0;
+    }
+    .header-body-bottom-blocks .content-block{
+    	padding: 0;
+    }
+    
+    .how-it-work .body-block-item{
+    	text-align: center;
+    }
+    .how-it-work .body-block-item img{
+		margin: 0 auto;
+		margin-bottom: 10px;
+    }
+    .how-it-work .body-how .body-how-register{
+    	margin-right: 80px;
+    	padding-left: 30px;
+    }
+
+    .body-how .body-how-register{
+        margin-right: 60px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .fl-responsive{
+        float: left;
+    }
+	.body-book-content,.body-book2 .body-book-content{
+		padding: 0;
+	}
+	.body-committees .secound-row{
+		padding: 0 20px;
+	}
+	.body-form-register button.btn.btn-epidemium{
+		width: 21%;
+	}
+	.first-menu .register{
+		padding-top: 6px;
+	}
+	.first-menu .navbar-brand{
+		margin: 0;
+		padding-left: 0;
+	}
+	#menu-epidemium input.form-control{
+		max-width: 260px;
+	}
+	.participate .header-top-bottom,.participate .header-body-bottom{
+    	padding-left: 0;
+    	padding-right: 0px;
+    }
+    .participate .more-info{
+    	padding-right: 20px;
+    }
+    .participate .participate-item-your-in img{
+    	max-width: 52px;
+    }
+
+    .body-how .line{
+    	left: 30%;
+    	width: 60%;
+    }
+    .body-how .body-how-margin-bottom{
+    	margin-top: 0px;
+        float: right;
+    }
+    .body-how .body-how-register{
+        padding: 0;
+        margin:10px 0 0;
+    }
+    .body-how .body-how-margin-bottom img{
+    	max-width: 270px;
+    	margin: 0 auto;
+    }
+    .how-it-work .body-how .body-how-register{
+    	max-width: 270px;
+	    float: right !important;
+	    margin: 0;
+    }
+    .how-it-work .body-how .body-how-register ~ div{
+    	max-width: 270px;
+    	margin-left: 20px;
+    }
+    .body-block-item {
+        min-height: 140px;
+    }
+
+    .content-bottom{
+        padding: 0;
+    }
+
+    .fl-responsive div:last-child{
+        float: right;
+    }
+    .header-top-bottom, .header-body-bottom{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .how-it-work2 .header-body-bottom.text-center{
+        padding-top: 20px;
+    }
+}
+@media screen and (max-width: 414px) {
+    .navbar-brand:after{
+        display: none;
+    }
+    .navbar-header{
+        padding: 0 20px;
+    }
+    .collapse.navbar-collapse{
+        display: block !important;
+    }
+    #menu-epidemium input.form-control{
+        width: 100%;
+        max-width: 100% !important;
+    }
+    .first-menu .register,#menu-epidemium .discover{
+        display: none;
+    }
+    .responsive-url{
+        display: block;
+        float: right;
+        padding-top: 7px;
+    }
+    .responsive-url a {
+        font-size: 23px;
+        margin: 0 7px;
+    }
+    .responsive-url a#link_responsive_login i{
+        padding-top: 6px;
+        float: right;
+    }
+    .login{
+        left: 10px;
+        right: 10px;
+        width: 95%;
+        /*width: 89%;*/
+         position: fixed;
+        z-index: 999;
+    }
+    div.mask_login{
+        display: block;
+        background: rgba(56, 72, 160, 0.89);
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 3;
+    }
+    div.mask_login img{
+        max-width: 30px;
+        float: right;
+        margin: 10px;
+    }
+    .responsive_singup{
+        display: block;
+        display: inline-block;
+        margin-left: 10px;
+        font-size: 15px;
+        text-decoration: underline;
+    }
+    ul.nav.nav-tabs.pull-left{
+        padding: 0 10px;
+        width: 100%;
+    }
+    .body-form-register input{
+        width: 100%;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+    .body-form-register button.btn.btn-epidemium{
+        width: 50%;
+        margin-top: 20px;
+    }
+    .body-challenge-bloks .col-lg-4.col-md-4.col-sm-6{
+        margin-bottom: 30px;
+    }
+    .body-book2 img{
+        width: 100%;
+        margin: 0;
+    }
+    .body-committees p{
+        max-width: 100%; 
+    }
+    .body-committees-content ul {
+        margin-right: 12px;
+    }
+
+    .participate .header-body-bottom-content{
+        padding: 0;
+    }
+    .participate-item .col-lg-10.col-md-10.col-sm-10.col-lg-xs-9{
+        padding-left: 16%;
+    }
+    .participate .participate-item p, .participate .participate-item-your-in p{
+        padding-right: 0;
+    }
+    .how-it-work2 .discover_link{
+        padding-bottom: 10;
+        float: left !important;
+        padding-left: 10px;
+    }
+    .how-it-work2 .header-body-bottom-blocks{
+        padding-top: 0;
+        margin-top: 0;
+    }
+    .how-it-work2 .blok {
+        text-align: center;
+    }
+    .how-it-work2 .content-bottom .nav-tabs>li{
+        width: 100%;
+    }
+    .how-it-work2 .content-bottom .nav-tabs>li>a{
+        margin: 0;
+    }
+    .body-how .line{
+        display: none;
+    }
+    .how-it-work2 .body-bottom img{
+            margin-top: 40px;
+    }
+    .body-how .body-how-margin-bottom{
+        margin-bottom: 0;
+    }
+    .how-it-work2 .body-bottom .block{
+        padding: 0;
+    }
+}
+@media screen and (max-width: 375px) {
+    .header-top-bottom .nav-tabs>li{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .home .header-top-bottom li a,.participate .header-top-bottom li a {
+         width: 100%; 
+        background: #eee;
+    }
+    .home .header-top-bottom li.active a,.participate .header-top-bottom li.active a {
+        background: #3847a0;
+        color: #fff;
+    }
+}
+@media screen and (max-width: 320px) {
+    .participate-item .col-lg-2.col-md-1.col-sm-1.col-xs-2,.participate-item-your-in .col-lg-2.col-md-1.col-sm-1.col-xs-2{
+        margin-left: 20px;
+    }
+    .participate-item-your-in .btn-epidemium{
+        font-size: 13px;
+    }
+    .how-it-work2 .header-top-bottom li.active a,.how-it-work2 .header-top-bottom .nav-tabs>li>a:hover{
+        border-radius: 4px;
+    }
+
+    .body-how .body-how-margin-bottom,.fl-responsive div:last-child{
+        float: left;
+    }
+    .fl-responsive{
+        float: initial;
+    }
+}
