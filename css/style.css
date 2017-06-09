@@ -62,7 +62,21 @@ hr{
 .inputs-line {
   font-size: 18px;
 }
-
+.body-form-register input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #eaeaea;
+}
+.body-form-register input::-moz-placeholder { /* Firefox 19+ */
+  color: #eaeaea;
+}
+.body-form-register input:-ms-input-placeholder { /* IE 10+ */
+  color: #eaeaea;
+}
+.body-form-register input:-moz-placeholder { /* Firefox 18- */
+  color: #eaeaea;
+}
+.body-form-register input.btn-epidemium{
+	margin-right: 0;
+}
 .btn-epidemium{
 	background: #42d9b7 !important;
     color: #fff;
