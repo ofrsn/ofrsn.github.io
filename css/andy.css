@@ -1,0 +1,5 @@
+.block_centered {
+	float:  none;
+	display: inline-block;
+	vertical-align: top;
+}
